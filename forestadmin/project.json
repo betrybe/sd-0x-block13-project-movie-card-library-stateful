@@ -1,0 +1,35 @@
+{
+  "project": {
+    "name": "sd-0x-block13-project-movie-card-library-stateful",
+    "description": "Projeto de Movie Cards Library Stateful",
+    "enabled": true,
+    "deadline": "YYYY-MM-DD 17:10:00",
+    "requirements": [
+      {
+        "description": "Crie um componente chamado `SearchBar`",
+        "enabled": true,
+        "bonus": false
+      },
+      {
+        "description": "Renderize um formulário dentro de `SearchBar`",
+        "enabled": true,
+        "bonus": false
+      },
+      {
+        "description": "Renderize um input do tipo texto dentro do formulário em `SearchBar`",
+        "enabled": true,
+        "bonus": false
+      },
+      {
+        "description": "Renderize um input do tipo checkbox dentro do formulário em `SearchBar`",
+        "enabled": true,
+        "bonus": false
+      },
+      {
+        "description": "Renderize um select dentro do formulário em `SearchBar`",
+        "enabled": true,
+        "bonus": false
+      }
+    ]
+  }
+}
