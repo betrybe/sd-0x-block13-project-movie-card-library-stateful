@@ -3,53 +3,55 @@ import { mount, shallow } from 'enzyme';
 
 import MovieLibrary from './MovieLibrary';
 
+const movies = [
+  {
+    title: 'An awesome title',
+    subtitle: 'Movie Subtitle 1',
+    storyline: 'Movie Storyline 1',
+    rating: 4.5,
+    imagePath: 'images/movie_1',
+    bookmarked: true,
+    genre: 'action',
+  },
+  {
+    title: 'Movie Title 2',
+    subtitle: 'An incredible subtitle',
+    storyline: 'Movie Storyline 2',
+    rating: 4.5,
+    imagePath: 'images/movie_2',
+    bookmarked: false,
+    genre: 'comedy',
+  },
+  {
+    title: 'Movie Title 3',
+    subtitle: 'Movie Subtitle 3',
+    storyline: 'An great storyline',
+    rating: 3,
+    imagePath: 'images/movie_3',
+    bookmarked: false,
+    genre: 'thriller',
+  },
+];
+
+let movieLibraryWrapper;
+
+const movieLibrary = () => {
+  if (!movieLibraryWrapper) {
+    movieLibraryWrapper = shallow(<MovieLibrary movies={movies} />);
+  }
+  return movieLibraryWrapper;
+};
+
+const beforeEachUnitTest = () => (movieLibraryWrapper = undefined);
+
 describe('<MovieLibrary /> component', () => {
-  const movies = [
-    {
-      title: 'An awesome title',
-      subtitle: 'Movie Subtitle 1',
-      storyline: 'Movie Storyline 1',
-      rating: 4.5,
-      imagePath: 'images/movie_1',
-      bookmarked: true,
-      genre: 'action',
-    },
-    {
-      title: 'Movie Title 2',
-      subtitle: 'An incredible subtitle',
-      storyline: 'Movie Storyline 2',
-      rating: 4.5,
-      imagePath: 'images/movie_2',
-      bookmarked: false,
-      genre: 'comedy',
-    },
-    {
-      title: 'Movie Title 3',
-      subtitle: 'Movie Subtitle 3',
-      storyline: 'An great storyline',
-      rating: 3,
-      imagePath: 'images/movie_3',
-      bookmarked: false,
-      genre: 'thriller',
-    },
-  ];
-
-  let movieLibraryWrapper;
-
-  const movieLibrary = () => {
-    if (!movieLibraryWrapper) {
-      movieLibraryWrapper = shallow(<MovieLibrary movies={movies} />);
-    }
-    return movieLibraryWrapper;
-  };
-
-  beforeEach(() => {
-    movieLibraryWrapper = undefined;
+  it('renders without crashing', () => {
+    movieLibrary();
   });
+});
 
-  it('renders a `SearchBar` component', () => {
-    expect(movieLibrary().find('SearchBar').length).toEqual(1);
-  });
+describe('<MovieLibrary /> component initial state', () => {
+  beforeEach(() => beforeEachUnitTest());
 
   it('initializes `searchText` in state with an empty string', () => {
     expect(movieLibrary().state().searchText).toBe('');
@@ -66,6 +68,10 @@ describe('<MovieLibrary /> component', () => {
   it('initializes `movies` in state with the prop `movies`', () => {
     expect(movieLibrary().state().movies).toEqual(movies);
   });
+});
+
+describe('<MovieLibrary /> should render <SearchBar />', () => {
+  beforeEach(() => beforeEachUnitTest());
 
   it('renders a `SearchBar` component', () => {
     expect(movieLibrary().find('SearchBar').length).toBe(1);
@@ -153,86 +159,82 @@ describe('<MovieLibrary /> component', () => {
     // and MovieLibrary's state should change
     expect(movieLibrary().state().selectedGenre).toBe('thriller');
   });
+});
+
+describe('<MovieLibrary /> should render <MovieList />', () => {
+  beforeEach(() => beforeEachUnitTest());
 
   it('renders a `MovieList` component', () => {
     expect(movieLibrary().find('MovieList').length).toBe(1);
   });
 
-  describe('when `bookmarkedOnly` in state is false', () => {
-    it('does not filter the movies passed to MovieList', () => {
-      movieLibrary().setState({ searchText: '' });
-      const passedMovies = movieLibrary().find('MovieList').props().movies;
+  it('passes to MovieList movies with titles matching the text', () => {
+    movieLibrary().setState({ searchText: 'awesome' });
+    const passedMovies = movieLibrary().find('MovieList').props().movies;
 
-      expect(passedMovies.length).toBe(3);
-      expect(passedMovies).toEqual(movies);
-    });
+    expect(passedMovies.length).toBe(1);
+    expect(passedMovies[0]).toEqual(movies[0]);
   });
 
-  describe('when `bookmarkedOnly` in state is true', () => {
-    it('it only passes to MovieList bookmarked movies', () => {
-      movieLibrary().setState({ bookmarkedOnly: true });
-      const passedMovies = movieLibrary().find('MovieList').props().movies;
+  it('passes to MovieList movies with subtitles matching the text', () => {
+    movieLibrary().setState({ searchText: 'incredible' });
+    const passedMovies = movieLibrary().find('MovieList').props().movies;
 
-      expect(passedMovies.length).toBe(1);
-      expect(passedMovies[0]).toEqual(movies[0]);
-    });
+    expect(passedMovies.length).toBe(1);
+    expect(passedMovies[0]).toEqual(movies[1]);
   });
 
-  describe('when `selectedGenre` in state is empty', () => {
-    it('it does not filter the movies passed to MovieList', () => {
-      movieLibrary().setState({ selectedGenre: '' });
-      const passedMovies = movieLibrary().find('MovieList').props().movies;
+  it('passes to MovieList movies with storyline matching the text', () => {
+    movieLibrary().setState({ searchText: 'great' });
+    const passedMovies = movieLibrary().find('MovieList').props().movies;
 
-      expect(passedMovies.length).toBe(3);
-      expect(passedMovies).toEqual(movies);
-    });
+    expect(passedMovies.length).toBe(1);
+    expect(passedMovies[0]).toEqual(movies[2]);
   });
 
-  describe('when `selectedGenre` in state has a value', () => {
-    it('passes to MovieList only movies matching the genre', () => {
-      movieLibrary().setState({ selectedGenre: 'comedy' });
-      const passedMovies = movieLibrary().find('MovieList').props().movies;
+  it('does not filter the movies passed to MovieList', () => {
+    movieLibrary().setState({ searchText: '' });
+    const passedMovies = movieLibrary().find('MovieList').props().movies;
 
-      expect(passedMovies.length).toBe(1);
-      expect(passedMovies[0]).toEqual(movies[1]);
-    });
+    expect(passedMovies.length).toBe(3);
+    expect(passedMovies).toEqual(movies);
   });
 
-  describe('when `searchText` in state is empty', () => {
-    it('does not filter the movies passed to MovieList', () => {
-      movieLibrary().setState({ searchText: '' });
-      const passedMovies = movieLibrary().find('MovieList').props().movies;
+  it('does not filter the movies passed to MovieList', () => {
+    movieLibrary().setState({ searchText: '' });
+    const passedMovies = movieLibrary().find('MovieList').props().movies;
 
-      expect(passedMovies.length).toBe(3);
-      expect(passedMovies).toEqual(movies);
-    });
+    expect(passedMovies.length).toBe(3);
+    expect(passedMovies).toEqual(movies);
   });
 
-  describe('when `searchText` in state has a value', () => {
-    it('passes to MovieList movies with titles matching the text', () => {
-      movieLibrary().setState({ searchText: 'awesome' });
-      const passedMovies = movieLibrary().find('MovieList').props().movies;
+  it('it only passes to MovieList bookmarked movies', () => {
+    movieLibrary().setState({ bookmarkedOnly: true });
+    const passedMovies = movieLibrary().find('MovieList').props().movies;
 
-      expect(passedMovies.length).toBe(1);
-      expect(passedMovies[0]).toEqual(movies[0]);
-    });
-
-    it('passes to MovieList movies with subtitles matching the text', () => {
-      movieLibrary().setState({ searchText: 'incredible' });
-      const passedMovies = movieLibrary().find('MovieList').props().movies;
-
-      expect(passedMovies.length).toBe(1);
-      expect(passedMovies[0]).toEqual(movies[1]);
-    });
-
-    it('passes to MovieList movies with storyline matching the text', () => {
-      movieLibrary().setState({ searchText: 'great' });
-      const passedMovies = movieLibrary().find('MovieList').props().movies;
-
-      expect(passedMovies.length).toBe(1);
-      expect(passedMovies[0]).toEqual(movies[2]);
-    });
+    expect(passedMovies.length).toBe(1);
+    expect(passedMovies[0]).toEqual(movies[0]);
   });
+
+  it('it does not filter the movies passed to MovieList', () => {
+    movieLibrary().setState({ selectedGenre: '' });
+    const passedMovies = movieLibrary().find('MovieList').props().movies;
+
+    expect(passedMovies.length).toBe(3);
+    expect(passedMovies).toEqual(movies);
+  });
+
+  it('passes to MovieList only movies matching the genre', () => {
+    movieLibrary().setState({ selectedGenre: 'comedy' });
+    const passedMovies = movieLibrary().find('MovieList').props().movies;
+
+    expect(passedMovies.length).toBe(1);
+    expect(passedMovies[0]).toEqual(movies[1]);
+  });
+});
+
+describe('<MovieLibrary /> should render <AddMovie />', () => {
+  beforeEach(() => beforeEachUnitTest());
 
   it('renders a `AddMovie` component', () => {
     expect(movieLibrary().find('AddMovie').length).toBe(1);

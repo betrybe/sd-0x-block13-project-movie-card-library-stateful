@@ -13,5 +13,10 @@
   "<AddMovie /> component storyline input": 0,
   "<AddMovie /> component rating input": 0,
   "<AddMovie /> component genre selection": 0,
-  "<AddMovie /> component creation button": 0
+  "<AddMovie /> component creation button": 0,
+  "<MovieLibrary /> component": 0,
+  "<MovieLibrary /> component initial state": 0,
+  "<MovieLibrary /> should render <SearchBar />": 0,
+  "<MovieLibrary /> should render <MovieList />": 0,
+  "<MovieLibrary /> should render <AddMovie />": 0
 }

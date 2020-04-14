@@ -79,6 +79,31 @@
         "description": "Renderize um botão do formulário em `AddMovie` para fazer uso dos dados do novo filme, contidos no estado de `AddMovie`",
         "enabled": true,
         "bonus": false
+      },
+      {
+        "description": "Crie um componente chamado `MovieLibrary`",
+        "enabled": true,
+        "bonus": false
+      },
+      {
+        "description": "Configure o estado inicial do componente `MovieLibray`",
+        "enabled": true,
+        "bonus": false
+      },
+      {
+        "description": "Renderize `SearchBar` dentro de `MovieLibrary`",
+        "enabled": true,
+        "bonus": false
+      },
+      {
+        "description": "Renderize `MovieList` dentro de `MovieLibrary`",
+        "enabled": true,
+        "bonus": false
+      },
+      {
+        "description": "Renderize `AddMovie` dentro de `MovieLibrary`",
+        "enabled": true,
+        "bonus": false
       }
     ]
   }

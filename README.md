@@ -282,7 +282,7 @@ Esse componente renderizará a biblioteca de filmes, com a possiblidade de filtr
 
   - `movies`, um array
 
-#### Estado
+#### Configure o estado inicial do componente `MovieLibray`
 
 O componente `MovieLibrary` possui como estado as seguintes propriedades:
 
