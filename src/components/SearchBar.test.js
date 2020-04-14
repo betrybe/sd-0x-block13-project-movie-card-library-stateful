@@ -3,31 +3,33 @@ import { shallow } from 'enzyme';
 
 import SearchBar from './SearchBar';
 
-describe('<SearchBar /> component', () => {
-  let props;
-  beforeEach(() => {
-    props = {
-      searchText: 'My Text',
-      onSearchTextChange: jest.fn(),
-      bookmarkedOnly: true,
-      onBookmarkedChange: jest.fn(),
-      selectedGenre: 'action',
-      onSelectedGenreChange: jest.fn(),
-    };
-  });
+let props;
+const searchBar = () => (
+  shallow(
+    <SearchBar
+      searchText={props.searchText}
+      onSearchTextChange={props.onSearchTextChange}
+      bookmarkedOnly={props.bookmarkedOnly}
+      onBookmarkedChange={props.onBookmarkedChange}
+      selectedGenre={props.selectedGenre}
+      onSelectedGenreChange={props.onSelectedGenreChange}
+    />,
+  )
+);
 
-  const searchBar = () => (
-    shallow(
-      <SearchBar
-        searchText={props.searchText}
-        onSearchTextChange={props.onSearchTextChange}
-        bookmarkedOnly={props.bookmarkedOnly}
-        onBookmarkedChange={props.onBookmarkedChange}
-        selectedGenre={props.selectedGenre}
-        onSelectedGenreChange={props.onSelectedGenreChange}
-      />,
-    )
-  );
+const beforeEachUnitTest = () => {
+  props = {
+    searchText: 'My Text',
+    onSearchTextChange: jest.fn(),
+    bookmarkedOnly: true,
+    onBookmarkedChange: jest.fn(),
+    selectedGenre: 'action',
+    onSelectedGenreChange: jest.fn(),
+  };
+};
+
+describe('<SearchBar /> component', () => {
+  beforeEach(() => beforeEachUnitTest());
 
   it('renders without crashing', () => {
     searchBar();
@@ -35,17 +37,7 @@ describe('<SearchBar /> component', () => {
 });
 
 describe('<SearchBar /> component Form', () => {
-  let props;
-  beforeEach(() => {
-    props = {
-      searchText: 'My Text',
-      onSearchTextChange: jest.fn(),
-      bookmarkedOnly: true,
-      onBookmarkedChange: jest.fn(),
-      selectedGenre: 'action',
-      onSelectedGenreChange: jest.fn(),
-    };
-  });
+  beforeEach(() => beforeEachUnitTest());
 
   const searchBar = () => (
     shallow(
@@ -66,17 +58,7 @@ describe('<SearchBar /> component Form', () => {
 });
 
 describe('<SearchBar /> component Text input', () => {
-  let props;
-  beforeEach(() => {
-    props = {
-      searchText: 'My Text',
-      onSearchTextChange: jest.fn(),
-      bookmarkedOnly: true,
-      onBookmarkedChange: jest.fn(),
-      selectedGenre: 'action',
-      onSelectedGenreChange: jest.fn(),
-    };
-  });
+  beforeEach(() => beforeEachUnitTest());
 
   const searchBar = () => (
     shallow(
@@ -111,17 +93,7 @@ describe('<SearchBar /> component Text input', () => {
 });
 
 describe('<SearchBar /> component Bookmarked checkbox', () => {
-  let props;
-  beforeEach(() => {
-    props = {
-      searchText: 'My Text',
-      onSearchTextChange: jest.fn(),
-      bookmarkedOnly: true,
-      onBookmarkedChange: jest.fn(),
-      selectedGenre: 'action',
-      onSelectedGenreChange: jest.fn(),
-    };
-  });
+  beforeEach(() => beforeEachUnitTest());
 
   const searchBar = () => (
     shallow(
@@ -159,17 +131,7 @@ describe('<SearchBar /> component Bookmarked checkbox', () => {
 });
 
 describe('<SearchBar /> component Movie Genre select', () => {
-  let props;
-  beforeEach(() => {
-    props = {
-      searchText: 'My Text',
-      onSearchTextChange: jest.fn(),
-      bookmarkedOnly: true,
-      onBookmarkedChange: jest.fn(),
-      selectedGenre: 'action',
-      onSelectedGenreChange: jest.fn(),
-    };
-  });
+  beforeEach(() => beforeEachUnitTest());
 
   const searchBar = () => (
     shallow(

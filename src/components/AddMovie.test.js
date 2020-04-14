@@ -3,30 +3,32 @@ import { shallow } from 'enzyme';
 
 import AddMovie from './AddMovie';
 
+const initialState = {
+  subtitle: '',
+  title: '',
+  imagePath: '',
+  storyline: '',
+  rating: 0,
+  genre: 'action',
+};
+
+let wrapper;
+let props;
+
+const addMovie = () => {
+  if (!wrapper) {
+    wrapper = shallow(<AddMovie onClick={props.onClick} />);
+  }
+  return wrapper;
+};
+
+const beforeEachUnitTest = () => {
+  wrapper = undefined;
+  props = { onClick: jest.fn() };
+};
+
 describe('<AddMovie /> component', () => {
-  const initialState = {
-    subtitle: '',
-    title: '',
-    imagePath: '',
-    storyline: '',
-    rating: 0,
-    genre: 'action',
-  };
-
-  let wrapper;
-  let props;
-
-  const addMovie = () => {
-    if (!wrapper) {
-      wrapper = shallow(<AddMovie onClick={props.onClick} />);
-    }
-    return wrapper;
-  };
-
-  beforeEach(() => {
-    wrapper = undefined;
-    props = { onClick: jest.fn() };
-  });
+  beforeEach(() => beforeEachUnitTest());
 
   it('renders without crashing', () => {
     addMovie();
@@ -38,29 +40,7 @@ describe('<AddMovie /> component', () => {
 });
 
 describe('<AddMovie /> component initial state', () => {
-  const initialState = {
-    subtitle: '',
-    title: '',
-    imagePath: '',
-    storyline: '',
-    rating: 0,
-    genre: 'action',
-  };
-
-  let wrapper;
-  let props;
-
-  const addMovie = () => {
-    if (!wrapper) {
-      wrapper = shallow(<AddMovie onClick={props.onClick} />);
-    }
-    return wrapper;
-  };
-
-  beforeEach(() => {
-    wrapper = undefined;
-    props = { onClick: jest.fn() };
-  });
+  beforeEach(() => beforeEachUnitTest());
 
   it('sets expected initial state', () => {
     expect(addMovie().state()).toEqual(initialState);
@@ -68,29 +48,7 @@ describe('<AddMovie /> component initial state', () => {
 });
 
 describe('<AddMovie /> component Form', () => {
-  const initialState = {
-    subtitle: '',
-    title: '',
-    imagePath: '',
-    storyline: '',
-    rating: 0,
-    genre: 'action',
-  };
-
-  let wrapper;
-  let props;
-
-  const addMovie = () => {
-    if (!wrapper) {
-      wrapper = shallow(<AddMovie onClick={props.onClick} />);
-    }
-    return wrapper;
-  };
-
-  beforeEach(() => {
-    wrapper = undefined;
-    props = { onClick: jest.fn() };
-  });
+  beforeEach(() => beforeEachUnitTest());
 
   it('renders a form', () => {
     expect(addMovie().find('form').length).toEqual(1);
@@ -98,29 +56,7 @@ describe('<AddMovie /> component Form', () => {
 });
 
 describe('<AddMovie /> component title input', () => {
-  const initialState = {
-    subtitle: '',
-    title: '',
-    imagePath: '',
-    storyline: '',
-    rating: 0,
-    genre: 'action',
-  };
-
-  let wrapper;
-  let props;
-
-  const addMovie = () => {
-    if (!wrapper) {
-      wrapper = shallow(<AddMovie onClick={props.onClick} />);
-    }
-    return wrapper;
-  };
-
-  beforeEach(() => {
-    wrapper = undefined;
-    props = { onClick: jest.fn() };
-  });
+  beforeEach(() => beforeEachUnitTest());
 
   const titleInput = () => addMovie().find('form input[type="text"]').at(0);
 
@@ -145,29 +81,7 @@ describe('<AddMovie /> component title input', () => {
 });
 
 describe('<AddMovie /> component subtitle input', () => {
-  const initialState = {
-    subtitle: '',
-    title: '',
-    imagePath: '',
-    storyline: '',
-    rating: 0,
-    genre: 'action',
-  };
-
-  let wrapper;
-  let props;
-
-  const addMovie = () => {
-    if (!wrapper) {
-      wrapper = shallow(<AddMovie onClick={props.onClick} />);
-    }
-    return wrapper;
-  };
-
-  beforeEach(() => {
-    wrapper = undefined;
-    props = { onClick: jest.fn() };
-  });
+  beforeEach(() => beforeEachUnitTest());
 
   const subtitleInput = () => addMovie().find('form input[type="text"]').at(1);
 
@@ -192,29 +106,7 @@ describe('<AddMovie /> component subtitle input', () => {
 });
 
 describe('<AddMovie /> component image path input', () => {
-  const initialState = {
-    subtitle: '',
-    title: '',
-    imagePath: '',
-    storyline: '',
-    rating: 0,
-    genre: 'action',
-  };
-
-  let wrapper;
-  let props;
-
-  const addMovie = () => {
-    if (!wrapper) {
-      wrapper = shallow(<AddMovie onClick={props.onClick} />);
-    }
-    return wrapper;
-  };
-
-  beforeEach(() => {
-    wrapper = undefined;
-    props = { onClick: jest.fn() };
-  });
+  beforeEach(() => beforeEachUnitTest());
 
   const imageInput = () => addMovie().find('form input[type="text"]').at(2);
 
@@ -239,29 +131,7 @@ describe('<AddMovie /> component image path input', () => {
 });
 
 describe('<AddMovie /> component storyline input', () => {
-  const initialState = {
-    subtitle: '',
-    title: '',
-    imagePath: '',
-    storyline: '',
-    rating: 0,
-    genre: 'action',
-  };
-
-  let wrapper;
-  let props;
-
-  const addMovie = () => {
-    if (!wrapper) {
-      wrapper = shallow(<AddMovie onClick={props.onClick} />);
-    }
-    return wrapper;
-  };
-
-  beforeEach(() => {
-    wrapper = undefined;
-    props = { onClick: jest.fn() };
-  });
+  beforeEach(() => beforeEachUnitTest());
 
   const storylineInput = () => addMovie().find('form textarea');
 
@@ -286,29 +156,7 @@ describe('<AddMovie /> component storyline input', () => {
 });
 
 describe('<AddMovie /> component rating input', () => {
-  const initialState = {
-    subtitle: '',
-    title: '',
-    imagePath: '',
-    storyline: '',
-    rating: 0,
-    genre: 'action',
-  };
-
-  let wrapper;
-  let props;
-
-  const addMovie = () => {
-    if (!wrapper) {
-      wrapper = shallow(<AddMovie onClick={props.onClick} />);
-    }
-    return wrapper;
-  };
-
-  beforeEach(() => {
-    wrapper = undefined;
-    props = { onClick: jest.fn() };
-  });
+  beforeEach(() => beforeEachUnitTest());
 
   const ratingInput = () => addMovie().find('form input[type="number"]');
 
@@ -333,29 +181,7 @@ describe('<AddMovie /> component rating input', () => {
 });
 
 describe('<AddMovie /> component genre selection', () => {
-  const initialState = {
-    subtitle: '',
-    title: '',
-    imagePath: '',
-    storyline: '',
-    rating: 0,
-    genre: 'action',
-  };
-
-  let wrapper;
-  let props;
-
-  const addMovie = () => {
-    if (!wrapper) {
-      wrapper = shallow(<AddMovie onClick={props.onClick} />);
-    }
-    return wrapper;
-  };
-
-  beforeEach(() => {
-    wrapper = undefined;
-    props = { onClick: jest.fn() };
-  });
+  beforeEach(() => beforeEachUnitTest());
 
   const genreOptions = [
     { value: 'action', text: 'Ação' },
@@ -397,29 +223,7 @@ describe('<AddMovie /> component genre selection', () => {
 });
 
 describe('<AddMovie /> component creation button', () => {
-  const initialState = {
-    subtitle: '',
-    title: '',
-    imagePath: '',
-    storyline: '',
-    rating: 0,
-    genre: 'action',
-  };
-
-  let wrapper;
-  let props;
-
-  const addMovie = () => {
-    if (!wrapper) {
-      wrapper = shallow(<AddMovie onClick={props.onClick} />);
-    }
-    return wrapper;
-  };
-
-  beforeEach(() => {
-    wrapper = undefined;
-    props = { onClick: jest.fn() };
-  });
+  beforeEach(() => beforeEachUnitTest());
 
   const button = () => addMovie().find('form button');
   const currentState = {
@@ -442,7 +246,6 @@ describe('<AddMovie /> component creation button', () => {
 
     expect(props.onClick).toHaveBeenCalledWith(currentState);
   });
-
 
   it('resets AddMovie to its initial state when clicked by the user', () => {
     addMovie().setState(currentState);
