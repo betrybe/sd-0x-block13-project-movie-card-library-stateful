@@ -187,7 +187,7 @@ Esse componente renderizará um formulário que permite adicionar na biblioteca 
 
   - `onClick`, uma callback
 
-#### Estado
+#### Configure o estado inicial do componente `AddMovie`
 
 O componente `AddMovie` possui como estado as seguintes propriedades:
 
