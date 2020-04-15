@@ -18,9 +18,7 @@ jobs:
         if: steps.wait-for-build.outputs.conclusion == 'success'
       - name: React Scripts evaluator step
         id: react-scripts
-        uses: betrybe/react-scripts-evaluator-action@feature/check-describe
-        env:
-          TEST_REPOSITORY_BRANCH: staging
+        uses: betrybe/react-scripts-evaluator-action@v2
         if: wait-for-build.outputs.conclusion == 'success'
       - name: Store evaluation step
         uses: betrybe/store-evaluation-action@v1
