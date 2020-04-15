@@ -20,7 +20,7 @@ jobs:
         id: react-scripts
         uses: betrybe/react-scripts-evaluator-action@feature/check-describe
         env:
-          TEST_REPOSITORY_BRANCH: 'staging'
+          TEST_REPOSITORY_BRANCH: staging
         if: wait-for-build.outputs.conclusion == 'success'
       - name: Store evaluation step
         uses: betrybe/store-evaluation-action@v1
