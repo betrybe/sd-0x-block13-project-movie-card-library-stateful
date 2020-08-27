@@ -320,7 +320,7 @@ Dentro desse formulário haverá campos usados para preencher informações do n
 
 #### Crie um componente chamado `MovieLibrary`
 
-Esse componente renderizará a biblioteca de filmes, com a possiblidade de filtrar por filmes e adicionar um filme à biblioteca.
+Esse componente renderizará a biblioteca de filmes renderizará a `searchBar` e o `addMovies` para filtrar por filmes e adicionar um filme à biblioteca respectivamente.
 
 `MovieLibrary` deve receber como props:
 
