@@ -337,6 +337,10 @@ O estado inicial do componente `MovieLibrary` deve ser:
 
 - A callback que permite adicionar um novo filme ao final da lista precisa ser passada para `AddMovie`.
 
+#### Adicione proptypes a todos os componentes
+
+Todos os compontens que recebem props devem ter suas proptypes corretamente declaradas. O eslint checa automaticamente declaração de proptypes, portanto seu Pull Request deverá passar no Code Climate para satisfazer esse requisito.
+
 ---
 
 ## Instruções para entregar seu projeto:
