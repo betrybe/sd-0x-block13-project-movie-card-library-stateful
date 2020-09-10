@@ -142,25 +142,37 @@ Esse componente renderizará uma barra com filtros acima da listagem de cartões
 
 Dentro desse formulário haverá campos usados na filtragem de cartões.
 
+- Esse formulário deve apresentar o atributo `data-testid="search-bar-form"`
+
 #### Renderize um input do tipo texto dentro do formulário em `SearchBar`
 
 - O input deve ter uma label associada com o texto: **"Inclui o texto:"**;
+
+- Essa label deve apresentar o atributo `data-testid="text-input-label"`
 
 - A propriedade `value` do input deve receber o valor da prop `searchText`;
 
 - A propriedade `onChange` do input deve receber o valor da prop `onSearchTextChange`.
 
+- Esse input deve apresentar o atributo `data-testid="text-input"`
+
 #### Renderize um input do tipo checkbox dentro do formulário em `SearchBar`
 
 - O input deve ter uma label associada com o texto: **"Mostrar somente favoritos"**;
+
+- Essa label deve apresentar o atributo `data-testid="checkbox-input-label"`
 
 - A propriedade `checked` do input deve receber o valor da prop `bookmarkedOnly`;
 
 - A propriedade `onChange` do input deve receber o valor da prop `onBookmarkedChange`.
 
+- Esse input deve apresentar o atributo `data-testid="checkbox-input"`
+
 #### Renderize um select dentro do formulário em `SearchBar`
 
 - O select deve ter uma label associada com o texto: **"Filtrar por gênero"**;
+
+- Essa label deve apresentar o atributo `data-testid="select-input-label"`
 
 - A propriedade `value` do select deve receber o valor da prop `selectedGenre`;
 
@@ -171,6 +183,10 @@ Dentro desse formulário haverá campos usados na filtragem de cartões.
    - `Ação`, com o valor `action`;
    - `Comédia`, com o valor `comedy`;
    - `Suspense`, com o valor `thriller`.
+
+- O select deve apresentar o atributo `data-testid="select-input"`
+
+- Cada `option` deve apresentar o atributo `data-testid="select-option"`
 
 #### Crie um componente chamado `AddMovie`
 
@@ -217,7 +233,11 @@ Dentro desse formulário haverá campos usados para preencher informações do n
 
 - O input deve ter uma label associada com o texto: **"Título"**;
 
+- Essa label deve apresentar o atributo `data-testid="title-input-label"`
+
 - O input deve ter seu valor inicial provido pelo estado inicial do componente, via `title`;
+
+- Esse input deve apresentar o atributo `data-testid="title-input"`
 
 - A propriedade `onChange` deve atualizar o estado de `AddMovie`, atribuindo a `title` o atual título contido no input.
 
@@ -225,7 +245,11 @@ Dentro desse formulário haverá campos usados para preencher informações do n
 
 - O input deve ter uma label associada com o texto: **"Subtítulo"**;
 
-- O input deve ter seu valor inicial provido pelo estado inicial do componente, via `subtitle`;
+- Essa label deve apresentar o atributo `data-testid="subtitle-input-label"`
+
+- O input deve ter seu valor inicial provido pelo estado inicial do componente, via `subsub`;
+
+- Esse input deve apresentar o atributo `data-testid="subtitle-input"`
 
 - A propriedade `onChange` deve atualizar o estado de `AddMovie`, atribuindo a `subtitle` o atual subtítulo contido no input.
 
@@ -233,7 +257,11 @@ Dentro desse formulário haverá campos usados para preencher informações do n
 
 - O input deve ter uma label associada com o texto: **"Imagem"**;
 
+- Essa label deve apresentar o atributo `data-testid="image-input-label"`
+
 - O input deve ter seu valor inicial provido pelo estado inicial do componente, via `imagePath`;
+
+- Esse input deve apresentar o atributo `data-testid="image-input"`
 
 - A propriedade `onChange` deve atualizar o estado de `AddMovie`, atribuindo a `imagePath` o atual caminho da imagem contido no input.
 
@@ -241,7 +269,11 @@ Dentro desse formulário haverá campos usados para preencher informações do n
 
 - A `textarea` deve ter uma label associada com o texto: **"Sinopse"**;
 
+- Essa label deve apresentar o atributo `data-testid="storyline-input-label"`
+
 - A `textarea` deve ter seu valor inicial provido pelo estado inicial do componente, via `storyline`;
+
+- Essa `textarea` deve apresentar o atributo `data-testid="storyline-input"`
 
 - A propriedade `onChange` deve atualizar o estado de `AddMovie`, atribuindo a `storyline` a sinopse atual continda na `textarea`.
 
@@ -249,7 +281,11 @@ Dentro desse formulário haverá campos usados para preencher informações do n
 
 - O `input` deve ter uma label associada com o texto: **"Avaliação"**;
 
+- Essa label deve apresentar o atributo `data-testid="rating-input-label"`
+
 - O `input` deve ter seu valor inicial provido pelo estado inicial do componente, via `rating`;
+
+- Essa `textarea` deve apresentar o atributo `data-testid="rating-input"`
 
 - A propriedade `onChange` deve atualizar o estado de `AddMovie`, atribuindo a `rating` a avaliação atual continda no input.
 
@@ -257,7 +293,11 @@ Dentro desse formulário haverá campos usados para preencher informações do n
 
 - O `select` deve ter uma label associada com o texto: **"Gênero"**;
 
+- Essa label deve apresentar o atributo `data-testid="genre-input-label"`
+
 - O `select` deve ter seu valor inicial provido pelo estado inicial do componente, via `genre`;
+
+- Essa `textarea` deve apresentar o atributo `data-testid="genre-input"`
 
 - A propriedade `onChange` deve atualizar o estado de `AddMovie`, atribuindo a `genre` o gênero atual selecionado;
 
@@ -266,9 +306,13 @@ Dentro desse formulário haverá campos usados para preencher informações do n
    - `Comédia`, com o valor `comedy`;
    - `Suspense`, com o valor `thriller`.
 
+- Cada `option` deve conter o atributo `data-testid="genre-option"`
+
 #### Renderize um botão do formulário em `AddMovie` para fazer uso dos dados do novo filme, contidos no estado de `AddMovie`
 
 - O botão precisa ter escrito o seguinte texto: **"Adicionar filme"**;
+
+- O botão deve conter o atributo `data-testid="send-button"`
 
 - A propriedade `onClick` do botão invoca uma função definida por você, em `AddMovie`, que:
   - Executa a callback passada para o componente `AddMovie` via props, chamada `onClick`, que recebe como parâmetro o estado atual de `AddMovie`;
