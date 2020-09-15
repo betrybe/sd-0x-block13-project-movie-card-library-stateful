@@ -66,7 +66,7 @@ describe('Verifica o input de título do componente <AddMovie />', () => {
     expect(titleInput).toBeInTheDocument();
   });
 
-  it('Será validado se o component renderiza a label "Título" para o input de titulo', () => {
+  it('Será validado se o componente renderiza a label "Título" para o input de titulo', () => {
     expect(titleInputLabel).toBeInTheDocument();
     expect(titleInputLabel).toHaveTextContent('Título');
   });
