@@ -113,7 +113,7 @@ describe('Verifica o input de imagem do componente <AddMovie />', () => {
     expect(imageInputLabel).toHaveTextContent('Imagem');
   });
 
-  it('Será validado se o estado inicial do input de imagem é ""', () => {
+  it('Será validado se o estado inicial do input de imagem é "", ou seja, uma string vazia', () => {
     expect(imageInput).toHaveValue(initialState.imagePath);
   });
 
