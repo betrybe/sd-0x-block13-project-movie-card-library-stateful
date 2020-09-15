@@ -36,7 +36,7 @@ const movies = [
 ];
 
 
-describe('Verifica o component <MovieLibrary />', () => {
+describe('Verifica o componente <MovieLibrary />', () => {
   it('Será validado se o componente é renderizado com sucesso', () => {
     render(<MovieLibrary movies={movies} />);
   });

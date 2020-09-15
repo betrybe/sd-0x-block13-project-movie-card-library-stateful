@@ -117,27 +117,27 @@ describe('Verifica o input de imagem do componente <AddMovie />', () => {
     expect(imageInput).toHaveValue(initialState.imagePath);
   });
 
-  it('Será validado se o valor do input de imagem muda quando algo é digitado pelo usuário', () => {
+  it('Será validado se o valor do input de imagem muda quando algo é digitado por quem usa', () => {
     event.type(imageInput, 'http://localhost:3000/images/Appleseed_Alpha.jpg');
     expect(imageInput).toHaveValue('http://localhost:3000/images/Appleseed_Alpha.jpg');
   });
 });
 
 describe('Verifica o input de sinopse do componente <AddMovie />', () => {
-  it('Será validado se o component renderiza um input de texto para o usuário escrever a sinopse do filme', () => {
+  it('Será validado se o componente renderiza um input de texto para quem usa escrever a sinopse do filme', () => {
     expect(storylineInput).toBeInTheDocument();
   });
   
-  it('Será validado se o component renderiza a label "Sinopse" para o input de sinopse', () => {
+  it('Será validado se o componente renderiza a label "Sinopse" para o input de sinopse', () => {
     expect(storylineInputLabel).toBeInTheDocument();
     expect(storylineInputLabel).toHaveTextContent('Sinopse');
   });
 
-  it('Será validado se o estado inicial do input de sinopse é ""', () => {
+  it('Será validado se o estado inicial do input de sinopse é "", ou seja, uma string vazia', () => {
     expect(storylineInput).toHaveValue(initialState.storyline);
   });
 
-  it('Será validado se o valor do input de sinopse muda quando algo é digitado pelo usuário', () => {
+  it('Será validado se o valor do input de sinopse muda quando algo é digitado por quem usa', () => {
     const message = 'In the following movie, everyone dies.';
     fireEvent.change(storylineInput, { target: { value: message } });
     expect(storylineInput).toHaveValue(message);
@@ -145,11 +145,11 @@ describe('Verifica o input de sinopse do componente <AddMovie />', () => {
 });
 
 describe('Verifica o input de avaliação do componente <AddMovie />', () => {
-  it('Será validado se o component renderiza um input de texto para o usuário escrever a avaliação do filme', () => {
+  it('Será validado se o componente renderiza um input de texto para quem usa escrever a avaliação do filme', () => {
     expect(ratingInput).toBeInTheDocument();
   });
   
-  it('Será validado se o component renderiza a label "Avaliação" para o input de avaliação', () => {
+  it('Será validado se o componente renderiza a label "Avaliação" para o input de avaliação', () => {
     expect(ratingInputLabel).toBeInTheDocument();
     expect(ratingInputLabel).toHaveTextContent('Avaliação');
   });
@@ -158,7 +158,7 @@ describe('Verifica o input de avaliação do componente <AddMovie />', () => {
     expect(ratingInput).toHaveValue(initialState.rating);
   });
 
-  it('Será validado se o valor do input de avaliação muda quando algo é digitado pelo usuário', () => {
+  it('Será validado se o valor do input de avaliação muda quando algo é digitado por quem usa', () => {
     event.type(ratingInput, '1.5');
 
     expect(ratingInput).toHaveValue(1.5);
@@ -173,7 +173,7 @@ describe('Verifica o select de gênero do componente <AddMovie />', () => {
   ];
 
 
-  it('Será validado se o component renderiza um select com 3 opções de genero de filme', () => {
+  it('Será validado se o componente renderiza um select com 3 opções de genero de filme', () => {
     expect(genreInput).toBeInTheDocument();
     expect(genreOptions).toHaveLength(options.length);
   });
@@ -191,11 +191,11 @@ describe('Verifica o select de gênero do componente <AddMovie />', () => {
     });
   });
 
-  it('Será validado se o gênero selecionado inicialmente é o de ação', () => {
+  it('Será validado se o gênero selecionado inicialmente é o "action"', () => {
     expect(genreInput).toHaveValue(initialState.genre);
   });
   
-  it('Será validado se o valor do gênero muda quando um genero diferente é escolhido', () => {
+  it('Será validado se o valor do gênero muda quando um gênero diferente é escolhido no select', () => {
     event.selectOptions(genreInput, options[1].value);
     expect(genreInput).toHaveValue(genreOptions[1].value);
   });
@@ -208,7 +208,7 @@ describe('Verifica botão de criar filme do componente <AddMovie />', () => {
     expect(sendButton).toHaveTextContent('Adicionar filme');
   });
 
-  it('Será validado se o onClick é chamado como deveria ao clicar no botão.', () => {
+  it('Será validado se o evento onClick é chamado ao se clicar no botão.', () => {
     event.type(titleInput, 'Harry Potter I');
     event.type(subtitleInput, 'Magical subtitle');
     fireEvent.change(storylineInput, { target: { value: 'The boy who lived.' } });
