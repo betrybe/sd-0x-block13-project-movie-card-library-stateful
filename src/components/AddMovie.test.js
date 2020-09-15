@@ -92,7 +92,7 @@ describe('Verifica o input de subtítulo do componente <AddMovie />', () => {
     expect(subtitleInputLabel).toHaveTextContent('Subtítulo');
   });
 
-  it('Será validado se o estado inicial do subtitulo é ""', () => {
+  it('Será validado se o estado inicial do subtitulo é "", ou seja, uma string vazia', () => {
     expect(subtitleInput).toHaveValue(initialState.subtitle);
   });
 
