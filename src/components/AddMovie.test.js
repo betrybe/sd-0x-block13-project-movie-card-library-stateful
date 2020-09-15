@@ -71,7 +71,7 @@ describe('Verifica o input de título do componente <AddMovie />', () => {
     expect(titleInputLabel).toHaveTextContent('Título');
   });
   
-  it('Será validado se o estado inicial do titulo é ""', () => {
+  it('Será validado se o estado inicial do titulo é "", ou seja, uma string vazia', () => {
     expect(titleInput).toHaveValue(initialState.title);
   });
   
