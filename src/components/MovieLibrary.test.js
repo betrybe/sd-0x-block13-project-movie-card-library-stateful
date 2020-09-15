@@ -94,7 +94,7 @@ describe('Verifica se o componente <MovieLibrary /> renderiza o componente <Sear
     expect(bookmarkedOnly).toBeChecked();
   });
 
-  it('Será validado que é possivel escolher uma categoria', () => {
+  it('Será validado que é possivel escolher uma categoria uma categoria de filme para filtrar', () => {
     const { getByTestId } = render(<MovieLibrary movies={movies} />);
     const selectInput = getByTestId('select-input');
     expect(selectInput).toHaveValue('');
