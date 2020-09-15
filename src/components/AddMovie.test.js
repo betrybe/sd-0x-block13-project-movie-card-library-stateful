@@ -75,7 +75,7 @@ describe('Verifica o input de título do componente <AddMovie />', () => {
     expect(titleInput).toHaveValue(initialState.title);
   });
   
-  it('Será validado se o valor do input de título muda quando algo é digitado pelo usuário', () => {
+  it('Será validado se o valor do input de título muda quando algo é digitado por quem usa', () => {
     event.type(titleInput, 'my awesome movie title');
 
     expect(titleInput).toHaveValue('my awesome movie title');
