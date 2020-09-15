@@ -151,7 +151,7 @@ describe('Verifica se o componente <MovieLibrary /> renderiza o componente <Movi
     expect(movieCardTitle).toHaveTextContent(movies[2].title);
   });
 
-  it('Será validado se a lista de filmes é renderizada sem filtro se a barra de buscar estiver vazia', () => {
+  it('Será validado se a lista de filmes é renderizada sem filtragens se a barra de buscar estiver vazia', () => {
     const { getByTestId, getAllByTestId } = render(<MovieLibrary movies={movies} />);
     const textInput = getByTestId('text-input');
 
