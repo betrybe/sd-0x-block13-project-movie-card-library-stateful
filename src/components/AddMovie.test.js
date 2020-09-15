@@ -62,7 +62,7 @@ describe('Verifica o componente <AddMovie />', () => {
 });
 
 describe('Verifica o input de título do componente <AddMovie />', () => {
-  it('Será validado se o component renderiza um input de texto para o usuário escrever o titulo do filme', () => {
+  it('Será validado se o component renderiza um input de texto para quem usa escrever o titulo do filme', () => {
     expect(titleInput).toBeInTheDocument();
   });
 
