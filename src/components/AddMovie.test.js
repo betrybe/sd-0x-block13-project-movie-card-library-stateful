@@ -108,7 +108,7 @@ describe('Verifica o input de imagem do componente <AddMovie />', () => {
     expect(imageInput).toBeInTheDocument();
   });
   
-  it('Será validado se o component renderiza a label "Imagem" para o input de imagem', () => {
+  it('Será validado se o componente renderiza a label "Imagem" para o input de imagem', () => {
     expect(imageInputLabel).toBeInTheDocument();
     expect(imageInputLabel).toHaveTextContent('Imagem');
   });
