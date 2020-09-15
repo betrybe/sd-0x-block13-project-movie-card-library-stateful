@@ -9,7 +9,7 @@ describe('Verifica o componente <Rating />', () => {
     render(<Rating />);
   });
 
-  it('Será validado se o componente renderiza o rating com o valor passado para ele via props `rating`', () => {
+  it('Será validado se o componente renderiza o <Rating /> com o valor passado para ele via props `rating`', () => {
     const { getByTestId } = render(<Rating rating={3} />);
     const rating = getByTestId('rating');
 
