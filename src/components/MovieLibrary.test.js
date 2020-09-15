@@ -77,7 +77,7 @@ describe('Verifica se o componente <MovieLibrary /> renderiza o componente <Sear
     expect(searchBar).toHaveLength(1);
   });
 
-  it('Será validado se o estado da `SearchBar` muda quando o usuário digita algo', () => {
+  it('Será validado se o estado da `SearchBar` muda quando quem usa digita algo', () => {
     const { getByTestId } = render(<MovieLibrary movies={movies} />);
     const searchText = getByTestId('text-input');
     event.type(searchText, 'My Search Text');
