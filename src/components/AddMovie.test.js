@@ -104,7 +104,7 @@ describe('Verifica o input de subtítulo do componente <AddMovie />', () => {
 });
 
 describe('Verifica o input de imagem do componente <AddMovie />', () => {
-  it('Será validado se o component renderiza um input de texto para o usuário escrever o caminho da imagem do filme', () => {
+  it('Será validado se o componente renderiza um input de texto para quem usa inserir a url da imagem do filme', () => {
     expect(imageInput).toBeInTheDocument();
   });
   
