@@ -247,7 +247,7 @@ Dentro desse formulário haverá campos usados para preencher informações do n
 
 - Essa label deve apresentar o atributo `data-testid="subtitle-input-label"`
 
-- O input deve ter seu valor inicial provido pelo estado inicial do componente, via `subsub`;
+- O input deve ter seu valor inicial provido pelo estado inicial do componente, via `subtitle`;
 
 - Esse input deve apresentar o atributo `data-testid="subtitle-input"`
 
