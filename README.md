@@ -285,7 +285,7 @@ Dentro desse formulário haverá campos usados para preencher informações do n
 
 - O `input` deve ter seu valor inicial provido pelo estado inicial do componente, via `rating`;
 
-- Essa `textarea` deve apresentar o atributo `data-testid="rating-input"`
+- Essa `input` deve apresentar o atributo `data-testid="rating-input"`
 
 - A propriedade `onChange` deve atualizar o estado de `AddMovie`, atribuindo a `rating` a avaliação atual continda no input.
 
@@ -297,7 +297,7 @@ Dentro desse formulário haverá campos usados para preencher informações do n
 
 - O `select` deve ter seu valor inicial provido pelo estado inicial do componente, via `genre`;
 
-- Essa `textarea` deve apresentar o atributo `data-testid="genre-input"`
+- Essa `input` deve apresentar o atributo `data-testid="genre-input"`
 
 - A propriedade `onChange` deve atualizar o estado de `AddMovie`, atribuindo a `genre` o gênero atual selecionado;
 
