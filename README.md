@@ -1,10 +1,55 @@
-# Boas vindas ao repositório do projeto de Movie Cards Library Stateful!
+Ao iniciar este projeto, você concorda com as diretrizes do Código de Ética e Conduta e do Manual da Pessoa Estudante da Trybe.
+
+## Boas vindas ao repositório do projeto de Movie Cards Library Stateful!
 
 Você já usa o GitHub diariamente para desenvolver os exercícios, certo? Agora, para desenvolver os projetos, você deverá seguir as instruções a seguir. Fique atento a cada passo, e se tiver qualquer dúvida, nos envie por _Slack_! #vqv 🚀
 
 Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu projeto a partir deste repositório, utilizando uma branch específica e um _Pull Request_ para colocar seus códigos.
-F
-## O que deverá ser desenvolvido
+
+## HABILIDADES
+
+## SUMÁRIO
+
+- [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
+- [Data de entrega](#data-de-entrega)
+- [Desenvolvimento](#desenvolvimento)
+  - [Componentes](#componentes)
+  - [Estado de componentes](#estado-de-componentes)
+- [Testes](#testes)
+  - [Dica: desativando testes](#dica-desativando-testes)
+- [Requisitos do projeto](#requisitos-do-projeto)
+  - [Linter](#linter)
+  - [Lista de requisitos](#lista-de-requisitos)
+    - [Crie um componente chamado SearchBar](#crie-um-componente-chamado-searchbar)
+    - [Renderize um formulário dentro de SearchBar](#renderize-um-formulário-dentro-de-searchbar)
+    - [Renderize um input do tipo texto dentro do formulário em SearchBar](#renderize-um-input-do-tipo-texto-dentro-do-formulário-em-searchbar)
+    - [Renderize um input do tipo checkbox dentro do formulário em SearchBar](#renderize-um-input-do-tipo-checkbox-dentro-do-formulário-em-searchbar)
+    - [Renderize um select dentro do formulário em SearchBar](#renderize-um-select-dentro-do-formulário-em-searchbar)
+    - [Crie um componente chamado AddMovie](#crie-um-componente-chamado-addmovie)
+    - [Configure o estado inicial do componente AddMovie](#configure-o-estado-inicial-do-componente-addmovie)
+    - [Renderize um formulário dentro de AddMovie](#renderize-um-formulário-dentro-de-addmovie)
+    - [Renderize um input do tipo texto dentro do formulário em AddMovie para obter o título do novo filme](#renderize-um-input-do-tipo-texto-dentro-do-formulário-em-addmovie-para-obter-o-título-do-novo-filme)
+    - [Renderize um input do tipo texto dentro do formulário em AddMovie para obter o subtítulo do novo filme](#renderize-um-input-do-tipo-texto-dentro-do-formulário-em-addmovie-para-obter-o-subtítulo-do-novo-filme)
+    - [Renderize um input do tipo texto dentro do formulário em AddMovie para obter o caminho da imagem do novo filme](#renderize-um-input-do-tipo-texto-dentro-do-formulário-em-addmovie-para-obter-o-caminho-da-imagem-do-novo-filme)
+    - [Renderize uma textarea dentro do formulário em AddMovie para obter a sinopse do novo filme](#renderize-uma-textarea-dentro-do-formulário-em-addmovie-para-obter-a-sinopse-do-novo-filme)
+    - [Renderize um input do tipo number dentro do formulário em AddMovie para obter a avaliação do novo filme](#renderize-um-input-do-tipo-number-dentro-do-formulário-em-addmovie-para-obter-a-avaliação-do-novo-filme)
+    - [Renderize um select do formulário em AddMovie para selecionar o gênero do novo filme](#renderize-um-select-do-formulário-em-addmovie-para-selecionar-o-gênero-do-novo-filme)
+    - [Renderize um botão do formulário em AddMovie para fazer uso dos dados do novo filme, contidos no estado de AddMovie](#renderize-um-botão-do-formulário-em-addmovie-para-fazer-uso-dos-dados-do-novo-filme-contidos-no-estado-de-addmovie)
+    - [Crie um componente chamado MovieLibrary](#crie-um-componente-chamado-movielibrary)
+    - [Configure o estado inicial do componente MovieLibrary](#configure-o-estado-inicial-do-componente-movielibrary)
+    - [Renderize SearchBar dentro de MovieLibrary](#renderize-searchbar-dentro-de-movielibrary)
+    - [Renderize MovieList dentro de MovieLibrary](#renderize-movielist-dentro-de-movielibrary)
+    - [Renderize AddMovie dentro de MovieLibrary](#renderize-addmovie-dentro-de-movielibrary)
+    - [Adicione proptypes a todos os componentes](#adicione-proptypes-a-todos-os-componentes)
+- [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
+  - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
+  - [Durante o desenvolvimento](#durante-o-desenvolvimento)
+  - [Depois de terminar o desenvolvimento](#depois-de-terminar-o-desenvolvimento)
+  - [Revisando um pull request](#revisando-um-pull-request)
+
+
+
+## O QUE DEVERÁ SER DESENVOLVIDO
 
 Você deverá desenvolver uma aplicação que consiste em uma biblioteca de cartões de filmes dinâmica utilizando React. A biblioteca é composta por:
 
@@ -22,11 +67,19 @@ Uma possível implementação dessa biblioteca consta abaixo.
 
 Você precisará implementar componentes que em conjunto resultarão na biblioteca de cartões de filmes dinâmica.
 
-## Desenvolvimento
+## DATA DE ENTREGA
+
+  - Projeto individual
+
+  - Serão `x` dias de projeto.
+
+  - O projeto tem até a seguinte data: `dd/mm/yyyy - 14:00h` para ter entregue a avaliação final.
+
+## DESENVOLVIMENTO
 
 Este repositório já contém um _template_ com um App React criado e configurado. Após clonar o projeto e instalar as dependências (mais sobre isso abaixo), você não precisará realizar nenhuma configuração adicional. Você deverá completar este _template_ implementando os requisitos listados na próxima seção.
 
-### Componentes
+### COMPONENTES
 
 Esse projeto contém os seguintes `React Components`:
 
@@ -42,7 +95,7 @@ Esse projeto contém os seguintes `React Components`:
 
 Todos os componentes devem ser criados dentro da pasta `src/components`. **É obrigatório que seus componentes tenham exatamente os nomes listados acima**.
 
-### Estado de componentes
+### ESTADO DE COMPONENTES
 
 Os componentes que **precisam** ter estado a ser gerenciado são:
 
@@ -96,7 +149,7 @@ Quando seu projeto estiver terminado, todos os testes deverão estar passando:
 
 ![image](all-green.png)
 
-#### Dica: desativando testes
+### Dica: desativando testes
 
 Especialmente no início, quando a maioria dos testes está falhando, a saída após executar os testes é bastante poluída. Você pode desabilitar temporariamente um teste utilizando a função `skip` junto à função `it`. Como o nome indica, esta função "pula" um teste:
 
@@ -125,7 +178,17 @@ Ao executar os testes localmente, [Jest](https://jestjs.io/), a ferramenta que e
 
 ## Requisitos do projeto
 
-⚠️ Lembre-se que o seu projeto só será avaliado se estiver passando por **todos os _checks_** do **CodeClimate**. Use o _check_ do **TravisCI** para medir o seu progresso em relação aos requisitos! 😉
+### LINTER
+
+Para garantir a qualidade do seu código de forma a tê-lo mais legível, de mais fácil manutenção e seguindo as boas práticas de desenvolvimento nós utilizamos neste projeto o linter `ESLint`. Para rodar o linter localmente no seu projeto, execute o comando abaixo:
+
+```bash
+npm run lint
+```
+
+⚠ **PULL REQUESTS COM ISSUES DE LINTER NÃO SERÃO AVALIADAS. ATENTE-SE PARA RESOLVÊ-LAS ANTES DE FINALIZAR O DESENVOLVIMENTO!** ⚠
+
+### LISTA DE REQUISITOS
 
 #### Crie um componente chamado `SearchBar`
 
@@ -140,9 +203,6 @@ Esse componente renderizará uma barra com filtros acima da listagem de cartões
 
 O que será validado: 
   - Será validado se o componente `SearchBar` renderiza com sucesso 
-
-
-
 
 #### Renderize um formulário dentro de `SearchBar`
 
@@ -416,7 +476,7 @@ O que será validado:
   - Será validado se o componente é renderizado com sucesso 
 
 
-#### Configure o estado inicial do componente `MovieLibray`
+#### Configure o estado inicial do componente `MovieLibrary`
 
 O componente `MovieLibrary` possui como estado as seguintes propriedades:
 
