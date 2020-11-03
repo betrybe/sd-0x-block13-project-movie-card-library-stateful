@@ -8,6 +8,12 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
 
 ## HABILIDADES
 
+  Nesse projeto, você será capaz de:
+    - Criar componentes react.
+    - Configurar o estado inicial de um componente.
+    - Utilizar props para passar informações entre componentes.
+    - Criar proptypes.
+    
 ## SUMÁRIO
 
 - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
