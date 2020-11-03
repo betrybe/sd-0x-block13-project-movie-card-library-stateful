@@ -13,7 +13,7 @@ Aqui você vai encontrar os detalhes de como estruturar o desenvolvimento do seu
     - Configurar o estado inicial de um componente.
     - Utilizar props para passar informações entre componentes.
     - Criar proptypes.
-    
+
 ## SUMÁRIO
 
 - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
@@ -108,7 +108,7 @@ Os componentes que **precisam** ter estado a ser gerenciado são:
    - MovieLibrary
    - AddMovie
 
-## Testes
+## TESTES
 
 Todos os requisitos do projeto serão testados **automaticamente**. Cada componente possui vários requisitos. Os testes para cada requisito de um componente estão no arquivo de teste correspondente.
 
@@ -155,7 +155,7 @@ Quando seu projeto estiver terminado, todos os testes deverão estar passando:
 
 ![image](all-green.png)
 
-### Dica: desativando testes
+### DICA: DESATIVANDO TESTES
 
 Especialmente no início, quando a maioria dos testes está falhando, a saída após executar os testes é bastante poluída. Você pode desabilitar temporariamente um teste utilizando a função `skip` junto à função `it`. Como o nome indica, esta função "pula" um teste:
 
@@ -178,11 +178,11 @@ Uma estratégia é pular todos os testes no início e ir implementando um teste 
 ⚠️ **Não apague, em hipótese alguma, qualquer teste ou arquivo deste repositório.**. ⚠️
 
 
-#### Dica: watch mode
+#### DICA: WATCH MODE
 
 Ao executar os testes localmente, [Jest](https://jestjs.io/), a ferramenta que executa os testes, entra em _watch mode_. Nesse modo, a cada vez que um arquivo é salvo, os testes são executados novamente. Isso pode aumentar sua produtividade removendo a necessidade de executar os testes manualmente o tempo todo. Você pode abrir uma aba no seu terminal ou no terminal do _VSCode_ e deixar o _Jest_ rodando nesse modo.
 
-## Requisitos do projeto
+## REQUISITOS DO PROJETO
 
 ### LINTER
 
@@ -196,7 +196,7 @@ npm run lint
 
 ### LISTA DE REQUISITOS
 
-#### Crie um componente chamado `SearchBar`
+#### CRIE UM COMPONENTE CHAMADO `SearchBar`
 
 Esse componente renderizará uma barra com filtros acima da listagem de cartões. Quais cartões serão mostrados no componente `MovieList` dependerá dos filtros escolhidos. `SearchBar` deve receber como props:
 
@@ -210,7 +210,8 @@ Esse componente renderizará uma barra com filtros acima da listagem de cartões
 O que será validado: 
   - Será validado se o componente `SearchBar` renderiza com sucesso 
 
-#### Renderize um formulário dentro de `SearchBar`
+
+#### RENDERIZE UM FORMULÁRIO DENTRO DE `SearchBar`
 
 Dentro desse formulário haverá campos usados na filtragem de cartões.
 
@@ -219,8 +220,7 @@ Dentro desse formulário haverá campos usados na filtragem de cartões.
 O que será validado:
   - Será validado se é renderizado 1, e apenas 1, form dentro de `SearchBar` com sucesso 
 
-
-#### Renderize um input do tipo texto dentro do formulário em `SearchBar`
+#### RENDERIZE UM INPUT DO TIPO TEXTO DENTRO DO FORMULÁRIO EM `SearchBar`
 
 - O input deve ter uma label associada com o texto: **"Inclui o texto:"**;
 
@@ -238,8 +238,7 @@ O que será validado:
   - Será validado se o input de texto tem o valor passado pela props `searchText` 
   - Será validado que a props `onSearchTextChange` é passada para o atributo `onChange` do input 
   
-
-#### Renderize um input do tipo checkbox dentro do formulário em `SearchBar`
+#### RENDERIZE UM INPUT DO TIPO CHECKBOX DENTRO DO FORMULÁRIO EM `SearchBar`
 
 - O input deve ter uma label associada com o texto: **"Mostrar somente favoritos"**;
 
@@ -257,8 +256,7 @@ O que será validado:
   - Será validado que a prop `bookmarkedOnly` é passada para o atributo `checked` do input 
   - Será validado que a prop `onBookmarkedChange` é passada para o atributo `onChange` do input 
   
-
-#### Renderize um select dentro do formulário em `SearchBar`
+#### RENDERIZE UM SELECT DENTRO DO FORMULÁRIO EM `SearchBar`
 
 - O select deve ter uma label associada com o texto: **"Filtrar por gênero"**;
 
@@ -285,7 +283,7 @@ O que será validado:
   - Será validado se a prop `onSelectedGenreChange` é passada para o atributo `onChange` do select 
   - Será validado se são renderizadas 4 options dentro do select com os textos e valores, respectivamente: Todos e \'\', Ação e action, Comédia e comedy, Suspense e thriller  
 
-#### Crie um componente chamado `AddMovie`
+#### CRIE UM COMPONENTE CHAMADO `AddMovie`
 
 Esse componente renderizará um formulário que permite adicionar na biblioteca um novo cartão de filme, dadas as seguintes informações do novo filme:
 
@@ -304,7 +302,7 @@ O que será validado:
   - Será validado se o componente renderiza 
   - Será validado se o componente renderiza 1, e apenas 1, form 
 
-#### Configure o estado inicial do componente `AddMovie`
+#### CONFIGURE O ESTADO INICIAL DO COMPONENTE `AddMovie`
 
 O componente `AddMovie` possui como estado as seguintes propriedades:
 
@@ -326,13 +324,11 @@ O estado inicial do componente `AddMovie` deve ser:
   - `rating`: 0;
   - `genre`: 'action'.
 
-
-#### Renderize um formulário dentro de `AddMovie`
+#### RENDERIZE UM FORMULÁRIO DENTRO DE `AddMovie`
 
 Dentro desse formulário haverá campos usados para preencher informações do novo cartão a ser adicionado na biblioteca.
 
-
-#### Renderize um input do tipo texto dentro do formulário em `AddMovie` para obter o título do novo filme
+#### RENDERIZE UM INPUT DO TIPO TEXTO DENTRO DO FORMULÁRIO EM `AddMovie` PARA OBTER O TÍTULO DO NOVO FILME
 
 - O input deve ter uma label associada com o texto: **"Título"**;
 
@@ -349,10 +345,8 @@ O que será validado:
   - Será validado se o componente renderiza a label "Título" para o input de titulo 
   - Será validado se o estado inicial do titulo é "", ou seja, uma string vazia 
   - Será validado se o valor do input de título muda quando algo é digitado por quem usa.
-  
 
-
-#### Renderize um input do tipo texto dentro do formulário em `AddMovie` para obter o subtítulo do novo filme
+#### RENDERIZE UM INPUT DO TIPO TEXTO DENTRO DO FORMULÁRIO EM `AddMovie` PARA OBTER O SUBTÍTULO DO NOVO FILME  
 
 - O input deve ter uma label associada com o texto: **"Subtítulo"**;
 
@@ -370,8 +364,7 @@ O que será validado:
   - Será validado se o estado inicial do subtitulo é "", ou seja, uma string vazia 
   - Será validado se o valor do input de subtitulo muda quando algo é digitado pelo usuário 
   
-
-#### Renderize um input do tipo texto dentro do formulário em `AddMovie` para obter o caminho da imagem do novo filme
+#### RENDERIZE UM INPUT DO TIPO TEXTO DENTRO DO FORMULÁRIO EM `AddMovie` PARA OBTER O CAMINHO DA IMAGEM DO NOVO FILME
 
 - O input deve ter uma label associada com o texto: **"Imagem"**;
 
@@ -389,8 +382,7 @@ O que será validado:
   - Será validado se o estado inicial do input de imagem é "", ou seja, uma string vazia 
   - Será validado se o valor do input de imagem muda quando algo é digitado por quem usa 
   
-
-#### Renderize uma `textarea` dentro do formulário em `AddMovie` para obter a sinopse do novo filme
+#### RENDERIZE UMA `textarea` DENTRO DO FORMULÁRIO EM `AddMovie` PARA OBTER A SINOPSE DO NOVO FILME
 
 - A `textarea` deve ter uma label associada com o texto: **"Sinopse"**;
 
@@ -408,8 +400,7 @@ O que será validado:
   - Será validado se o estado inicial do input de sinopse é "", ou seja, uma string vazia 
   - Será validado se o valor do input de sinopse muda quando algo é digitado por quem usa 
   
-
-#### Renderize um `input` do tipo `number` dentro do formulário em `AddMovie` para obter a avaliação do novo filme
+#### RENDERIZE UM `input` DO TIPO `number` DENTRO DO FORMULÁRIO EM `AddMovie` PARA OBTER A AVALIAÇÃO DO NOVO FILME
 
 - O `input` deve ter uma label associada com o texto: **"Avaliação"**;
 
@@ -427,8 +418,7 @@ O que será validado:
   - Será validado se o estado inicial do input de avaliação é 0 
   - Será validado se o valor do input de avaliação muda quando algo é digitado por quem usa 
   
-
-#### Renderize um `select` do formulário em `AddMovie` para selecionar o gênero do novo filme
+#### RENDERIZE UM `select` DO FORMULÁRIO EM `AddMovie` PARA SELECIONAR O GÊNERO DO NOVO FILME
 
 - O `select` deve ter uma label associada com o texto: **"Gênero"**;
 
@@ -454,8 +444,7 @@ O que será validado:
   - Será validado se o gênero selecionado inicialmente é o "action" 
   - Será validado se o valor do gênero muda quando um gênero diferente é escolhido no select 
 
-
-#### Renderize um botão do formulário em `AddMovie` para fazer uso dos dados do novo filme, contidos no estado de `AddMovie`
+#### RENDERIZE UM BOTÃO DO FORMULÁRIO EM `AddMovie` PARA FAZER USO DOS DADOS DO NOVO FILME, CONTIDOS NO ESTADO DE `AddMovie`
 
 - O botão precisa ter escrito o seguinte texto: **"Adicionar filme"**;
 
@@ -470,7 +459,7 @@ O que será validado:
   - Será validado se o evento onClick é chamado ao se clicar no botão. 
   - Será validado se o estado dos inputs volta ao inicial depois que o botão de adicionar é clicado. 
 
-#### Crie um componente chamado `MovieLibrary`
+#### CRIE UM COMPONENTE CHAMADO `MovieLibrary`
 
 Esse componente renderizará a biblioteca de filmes que renderizará a `searchBar` e o `addMovies` para filtrar por filmes e adicionar um filme à biblioteca respectivamente.
 
@@ -481,8 +470,7 @@ Esse componente renderizará a biblioteca de filmes que renderizará a `searchBa
 O que será validado: 
   - Será validado se o componente é renderizado com sucesso 
 
-
-#### Configure o estado inicial do componente `MovieLibrary`
+#### CONFIGURE O ESTADO INICIAL DO COMPONENTE `MovieLibrary`
 
 O componente `MovieLibrary` possui como estado as seguintes propriedades:
 
@@ -506,8 +494,7 @@ O que será validado:
   - Será validado se o `selectedGenre` é inicializado com uma string vazia 
   - Será validado se o todos os `movies` são renderezidados. 
 
-
-#### Renderize `SearchBar` dentro de `MovieLibrary`
+#### RENDERIZE `SearchBar` DENTRO DE `MovieLibrary`
 
 - `searchText` oriundo do estado de `MovieLibrary` deve ser passado para a prop `searchText` de `SearchBar`;
 
@@ -527,8 +514,7 @@ O que será validado:
   - Será validado que é possivel selecionar a opção de filtrar por favoritos` 
   - Será validado que é possivel escolher uma categoria uma categoria de filme para filtrar 
 
-
-#### Renderize `MovieList` dentro de `MovieLibrary`
+#### RENDERIZE `MovieList` DENTRO DE `MovieLibrary`
 
 - Deve passar para a prop `movies` de `MovieList` todos os filmes filtrados;
 
@@ -556,8 +542,7 @@ O que será validado:
   - Será validado que é possivel filtrar por favoritos 
   - Será validado que é possivel filtrar por categoria 
 
-
-#### Renderize `AddMovie` dentro de `MovieLibrary`
+#### RENDERIZE `AddMovie` DENTRO DE `MovieLibrary`
 
 - A callback que permite adicionar um novo filme ao final da lista precisa ser passada para `AddMovie`.
 
@@ -565,14 +550,14 @@ O que será validado:
   - Será validado se o componente `AddMovie` é renderizado com sucesso 
   - Será validado se é possível adicionar um novo filme a lista de filmes 
 
-#### Adicione proptypes a todos os componentes
+#### ADICIONE PROPTYPES A TODOS OS COMPONENTES
 
 Todos os compontens que recebem props devem ter suas proptypes corretamente declaradas. O eslint checa automaticamente declaração de proptypes, portanto seu Pull Request deverá passar no Code Climate para satisfazer esse requisito.
 
 
 ---
 
-## Instruções para entregar seu projeto:
+## INSTRUÇÕES PARA ENTREGAR SEU PROJETO:
 
 ### ANTES DE COMEÇAR A DESENVOLVER:
 
