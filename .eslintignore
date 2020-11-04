@@ -1,0 +1,11 @@
+src/data.js
+src/setupTests.js
+src/serviceWorker.js
+src/components/App.test.js
+src/components/AddMovie.test.js
+src/components/Header.test.js
+src/components/MovieCard.test.js
+src/components/MovieLibrary.test.js
+src/components/MovieList.test.js
+src/components/Rating.test.js
+src/components/SearchBar.test.js
