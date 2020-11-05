@@ -17,10 +17,11 @@ Nesse projeto, você será capaz de:
 ## SUMÁRIO
 
 - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
-- [Data de entrega](#data-de-entrega)
 - [Desenvolvimento](#desenvolvimento)
   - [Componentes](#componentes)
   - [Estado de componentes](#estado-de-componentes)
+- [Data de entrega](#data-de-entrega)
+- [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
 - [Testes](#testes)
   - [Dica: desativando testes](#dica-desativando-testes)
 - [Requisitos do projeto](#requisitos-do-projeto)
@@ -73,14 +74,6 @@ Uma possível implementação dessa biblioteca consta abaixo.
 
 Você precisará implementar componentes que em conjunto resultarão na biblioteca de cartões de filmes dinâmica.
 
-## DATA DE ENTREGA
-
-  - Projeto individual
-
-  - Serão `x` dias de projeto.
-
-  - O projeto tem até a seguinte data: `dd/mm/yyyy - 14:00h` para ter entregue a avaliação final.
-
 ## DESENVOLVIMENTO
 
 Este repositório já contém um _template_ com um App React criado e configurado. Após clonar o projeto e instalar as dependências (mais sobre isso abaixo), você não precisará realizar nenhuma configuração adicional. Você deverá completar este _template_ implementando os requisitos listados na próxima seção.
@@ -89,13 +82,13 @@ Este repositório já contém um _template_ com um App React criado e configurad
 
 Esse projeto contém os seguintes `React Components`:
 
-   - Header
-   - MovieLibrary
-   - SearchBar
-   - MovieList
-   - MovieCard
-   - Rating
-   - AddMovie
+  - Header
+  - MovieLibrary
+  - SearchBar
+  - MovieList
+  - MovieCard
+  - Rating
+  - AddMovie
 
 `Header`, `MovieList`, `MovieCard` e `Rating` já estão implementados. `MovieLibrary`, `SearchBar` e `AddMovie` já estão criados, mas precisam ser implementados de forma a passarem nos requisitos listados abaixo.
 
@@ -105,8 +98,83 @@ Todos os componentes devem ser criados dentro da pasta `src/components`. **É ob
 
 Os componentes que **precisam** ter estado a ser gerenciado são:
 
-   - MovieLibrary
-   - AddMovie
+  - MovieLibrary
+  - AddMovie
+
+## DATA DE ENTREGA
+
+  - Projeto individual
+
+  - Serão `x` dias de projeto.
+
+  - O projeto tem até a seguinte data: `dd/mm/yyyy - 14:00h` para ter entregue a avaliação final.
+
+### ANTES DE COMEÇAR A DESENVOLVER:
+
+1. Clone o repositório
+  * `git clone git@github.com:betrybe/sd-0x-project-movie-card-library-stateful.git`.
+  * Entre na pasta do repositório que você acabou de clonar:
+    * `cd sd-0x-project-movie-card-library-stateful`
+
+2. Instale as dependências e inicialize o projeto
+  * Instale as dependências:
+    * `npm install`
+  * Inicialize o projeto:
+    * `npm start` (uma nova página deve abrir no seu navegador com um texto simples)
+
+3. Crie uma branch a partir da branch `master`
+  * Verifique que você está na branch `master`
+    * Exemplo: `git branch`
+  * Se não estiver, mude para a branch `master`
+    * Exemplo: `git checkout master`
+  * Agora, crie uma branch onde você vai guardar os `commits` do seu projeto
+    * Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
+    * Exemplo: `git checkout -b joaozinho-project-movie-card-library-stateful`
+
+4. Faça alterações em algum dos componentes que precisam de implementação, por exemplo o `App` em `src/`:
+```jsx
+import React from 'react';
+import './App.css';
+
+import Header from './components/Header';
+
+function App() {
+  return (
+    <div className="App">
+      Movie Card Library STATEFUL
+      <Header />
+    </div>
+  );
+}
+
+export default App;
+```
+
+5. Adicione as mudanças ao _stage_ do Git e faça um `commit`
+  * Verifique que as mudanças ainda não estão no _stage_
+    * Exemplo: `git status` (deve aparecer listado o arquivo _src/App.js_ em vermelho)
+  * Adicione o arquivo alterado ao _stage_ do Git
+      * Exemplo:
+        * `git add .` (adicionando todas as mudanças - _que estavam em vermelho_ - ao stage do Git)
+        * `git status` (deve aparecer listado o arquivo _src/App.js_ em verde)
+  * Faça o `commit` inicial
+      * Exemplo:
+        * `git commit -m 'iniciando o projeto. VAMOS COM TUDO :rocket:'` (fazendo o primeiro commit)
+        * `git status` (deve aparecer uma mensagem tipo _nothing to commit_ )
+
+6. Adicione a sua branch com o novo `commit` ao repositório remoto
+  * Usando o exemplo anterior: `git push -u origin joaozinho-project-movie-card-library-stateful`
+
+7. Crie um novo `Pull Request` _(PR)_
+  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-project-movie-card-library-stateful/pulls)
+  * Clique no botão verde _"New pull request"_
+  * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
+  * Clique no botão verde _"Create pull request"_
+  * Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
+  * **Não se preocupe em preencher mais nada por enquanto!**
+  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-project-movie-card-library-stateful/pulls) e confira que o seu _Pull Request_ está criado
+
+---
 
 ## TESTES
 
