@@ -33,27 +33,27 @@ Nesse projeto, você será capaz de:
   - [Dica: desativando testes](#dica-desativando-testes)
   - [Dica: watch mode](#dica-watch-mode)
 - [Lista de requisitos](#lista-de-requisitos)
-  - [1 - Crie um componente chamado SearchBar](#1-crie-um-componente-chamado-searchbar)
-  - [2 - Renderize um formulário dentro de SearchBar](#2-renderize-um-formulário-dentro-de-searchbar)
-  - [3 - Renderize um input do tipo texto dentro do formulário em SearchBar](#3-renderize-um-input-do-tipo-texto-dentro-do-formulário-em-searchbar)
-  - [4 - Renderize um input do tipo checkbox dentro do formulário em SearchBar](#4-renderize-um-input-do-tipo-checkbox-dentro-do-formulário-em-searchbar)
-  - [5 - Renderize um select dentro do formulário em SearchBar](#5-renderize-um-select-dentro-do-formulário-em-searchbar)
-  - [6 - Crie um componente chamado AddMovie](#6-crie-um-componente-chamado-addmovie)
-  - [7 - Configure o estado inicial do componente AddMovie](#7-configure-o-estado-inicial-do-componente-addmovie)
-  - [8 - Renderize um formulário dentro de AddMovie](#8-renderize-um-formulário-dentro-de-addmovie)
-  - [9 - Renderize um input do tipo texto dentro do formulário em AddMovie para obter o título do novo filme](#9-renderize-um-input-do-tipo-texto-dentro-do-formulário-em-addmovie-para-obter-o-título-do-novo-filme)
-  - [10 - Renderize um input do tipo texto dentro do formulário em AddMovie para obter o subtítulo do novo filme](#10-renderize-um-input-do-tipo-texto-dentro-do-formulário-em-addmovie-para-obter-o-subtítulo-do-novo-filme)
-  - [11 - Renderize um input do tipo texto dentro do formulário em AddMovie para obter o caminho da imagem do novo filme](#11-renderize-um-input-do-tipo-texto-dentro-do-formulário-em-addmovie-para-obter-o-caminho-da-imagem-do-novo-filme)
-  - [12 - Renderize uma textarea dentro do formulário em AddMovie para obter a sinopse do novo filme](#12-renderize-uma-textarea-dentro-do-formulário-em-addmovie-para-obter-a-sinopse-do-novo-filme)
-  - [13 - Renderize um input do tipo number dentro do formulário em AddMovie para obter a avaliação do novo filme](#13-renderize-um-input-do-tipo-number-dentro-do-formulário-em-addmovie-para-obter-a-avaliação-do-novo-filme)
-  - [14 - Renderize um select do formulário em AddMovie para selecionar o gênero do novo filme](#14-renderize-um-select-do-formulário-em-addmovie-para-selecionar-o-gênero-do-novo-filme)
-  - [15 - Renderize um botão do formulário em AddMovie para fazer uso dos dados do novo filme, contidos no estado de AddMovie](#15-renderize-um-botão-do-formulário-em-addmovie-para-fazer-uso-dos-dados-do-novo-filme-contidos-no-estado-de-addmovie)
-  - [16 - Crie um componente chamado MovieLibrary](#16-crie-um-componente-chamado-movielibrary)
-  - [17 - Configure o estado inicial do componente MovieLibrary](#17-configure-o-estado-inicial-do-componente-movielibrary)
-  - [18 - Renderize SearchBar dentro de MovieLibrary](#18-renderize-searchbar-dentro-de-movielibrary)
-  - [19 - Renderize MovieList dentro de MovieLibrary](#19-renderize-movielist-dentro-de-movielibrary)
-  - [20 - Renderize AddMovie dentro de MovieLibrary](#20-renderize-addmovie-dentro-de-movielibrary)
-  - [21 - Adicione proptypes a todos os componentes](#21-adicione-proptypes-a-todos-os-componentes)
+  - [1 - Crie um componente chamado SearchBar](#1---crie-um-componente-chamado-searchbar)
+  - [2 - Renderize um formulário dentro de SearchBar](#2---renderize-um-formulário-dentro-de-searchbar)
+  - [3 - Renderize um input do tipo texto dentro do formulário em SearchBar](#3---renderize-um-input-do-tipo-texto-dentro-do-formulário-em-searchbar)
+  - [4 - Renderize um input do tipo checkbox dentro do formulário em SearchBar](#4---renderize-um-input-do-tipo-checkbox-dentro-do-formulário-em-searchbar)
+  - [5 - Renderize um select dentro do formulário em SearchBar](#5---renderize-um-select-dentro-do-formulário-em-searchbar)
+  - [6 - Crie um componente chamado AddMovie](#6---crie-um-componente-chamado-addmovie)
+  - [7 - Configure o estado inicial do componente AddMovie](#7---configure-o-estado-inicial-do-componente-addmovie)
+  - [8 - Renderize um formulário dentro de AddMovie](#8---renderize-um-formulário-dentro-de-addmovie)
+  - [9 - Renderize um input do tipo texto dentro do formulário em AddMovie para obter o título do novo filme](#9---renderize-um-input-do-tipo-texto-dentro-do-formulário-em-addmovie-para-obter-o-título-do-novo-filme)
+  - [10 - Renderize um input do tipo texto dentro do formulário em AddMovie para obter o subtítulo do novo filme](#10---renderize-um-input-do-tipo-texto-dentro-do-formulário-em-addmovie-para-obter-o-subtítulo-do-novo-filme)
+  - [11 - Renderize um input do tipo texto dentro do formulário em AddMovie para obter o caminho da imagem do novo filme](#11---renderize-um-input-do-tipo-texto-dentro-do-formulário-em-addmovie-para-obter-o-caminho-da-imagem-do-novo-filme)
+  - [12 - Renderize uma textarea dentro do formulário em AddMovie para obter a sinopse do novo filme](#12---renderize-uma-textarea-dentro-do-formulário-em-addmovie-para-obter-a-sinopse-do-novo-filme)
+  - [13 - Renderize um input do tipo number dentro do formulário em AddMovie para obter a avaliação do novo filme](#13---renderize-um-input-do-tipo-number-dentro-do-formulário-em-addmovie-para-obter-a-avaliação-do-novo-filme)
+  - [14 - Renderize um select do formulário em AddMovie para selecionar o gênero do novo filme](#14---renderize-um-select-do-formulário-em-addmovie-para-selecionar-o-gênero-do-novo-filme)
+  - [15 - Renderize um botão do formulário em AddMovie para fazer uso dos dados do novo filme, contidos no estado de AddMovie](#15---renderize-um-botão-do-formulário-em-addmovie-para-fazer-uso-dos-dados-do-novo-filme-contidos-no-estado-de-addmovie)
+  - [16 - Crie um componente chamado MovieLibrary](#16---crie-um-componente-chamado-movielibrary)
+  - [17 - Configure o estado inicial do componente MovieLibrary](#17---configure-o-estado-inicial-do-componente-movielibrary)
+  - [18 - Renderize SearchBar dentro de MovieLibrary](#18---renderize-searchbar-dentro-de-movielibrary)
+  - [19 - Renderize MovieList dentro de MovieLibrary](#19---renderize-movielist-dentro-de-movielibrary)
+  - [20 - Renderize AddMovie dentro de MovieLibrary](#20---renderize-addmovie-dentro-de-movielibrary)
+  - [21 - Adicione proptypes a todos os componentes](#21---adicione-proptypes-a-todos-os-componentes)
 - [Avisos finais](#avisos-finais)
 
 ## O QUE DEVERÁ SER DESENVOLVIDO
@@ -289,7 +289,7 @@ Quando seu projeto estiver terminado, todos os testes deverão estar passando:
 
 ![image](all-green.png)
 
-### Dica: desativando teste
+### Dica: desativando testes
 
 Especialmente no início, quando a maioria dos testes está falhando, a saída após executar os testes é bastante poluída. Você pode desabilitar temporariamente um teste utilizando a função `skip` junto à função `it`. Como o nome indica, esta função "pula" um teste:
 
