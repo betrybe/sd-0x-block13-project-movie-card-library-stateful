@@ -27,7 +27,7 @@ Nesse projeto, você será capaz de:
 - [Instruções para entregar seu projeto](#instruções-para-entregar-seu-projeto)
   - [Antes de começar a desenvolver](#antes-de-começar-a-desenvolver)
   - [Durante o desenvolvimento](#durante-o-desenvolvimento)
-  - [Depois de terminar o desenvolvimento](#depois-de-terminar-o-desenvolvimento)
+  - [Depois de terminar o desenvolvimento (opcional)](#depois-de-terminar-o-desenvolvimento-opcional)
   - [Revisando um pull request](#revisando-um-pull-request)
 - [Testes](#testes)
   - [Dica: desativando testes](#dica-desativando-testes)
@@ -54,6 +54,7 @@ Nesse projeto, você será capaz de:
   - [19 - Renderize MovieList dentro de MovieLibrary](#19-renderize-movielist-dentro-de-movielibrary)
   - [20 - Renderize AddMovie dentro de MovieLibrary](#20-renderize-addmovie-dentro-de-movielibrary)
   - [21 - Adicione proptypes a todos os componentes](#21-adicione-proptypes-a-todos-os-componentes)
+- [Avisos finais](#avisos-finais)
 
 ## O QUE DEVERÁ SER DESENVOLVIDO
 
@@ -216,7 +217,7 @@ export default MovieLibrary;
 
 ---
 
-### DEPOIS DE TERMINAR O DESENVOLVIMENTO
+### DEPOIS DE TERMINAR O DESENVOLVIMENTO (OPCIONAL)
 
 Para **"entregar"** seu projeto, siga os passos a seguir:
 
@@ -717,5 +718,15 @@ Ao executar os testes localmente, [Jest](https://jestjs.io/), a ferramenta que e
 
   - Todos os compontens que recebem props devem ter suas proptypes corretamente declaradas. O eslint checa automaticamente declaração de proptypes, portanto seu Pull Request deverá passar no Code Climate para satisfazer esse requisito.
 
+
+---
+
+# AVISOS FINAIS
+
+Ao finalizar e submeter o projeto, não se esqueça de avaliar sua experiência preenchendo o formulário. Leva menos de 3 minutos!
+
+Link: [FORMULÁRIO DE AVALIAÇÃO DE PROJETO](https://be-trybe.typeform.com/to/ZTeR4IbH)
+
+O avaliador automático não necessariamente avalia seu projeto na ordem em que os requisitos aparecem no readme. Isso acontece para deixar o processo de avaliação mais rápido. Então, não se assuste se isso acontecer, ok?
 
 ---
