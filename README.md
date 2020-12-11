@@ -12,8 +12,6 @@ F
 
 # Sumário
 
-- [Boas vindas ao repositório do projeto de Movie Cards Library Stateful!](#boas-vindas-ao-repositório-do-projeto-de-movie-cards-library-stateful)
-- [Sumário](#sumário)
 - [Habilidades](#habilidades)
 - [Entregáveis](#entregáveis)
   - [O que deverá ser desenvolvido](#o-que-deverá-ser-desenvolvido)
