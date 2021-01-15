@@ -18,15 +18,15 @@
       "bonus": false
     },
     {
-      "description": "Verifica o input de avaliação do componente <AddMovie />",
+      "description": "13 - Renderize um `input` do tipo `number` dentro do formulário em `AddMovie` para obter a avaliação do novo filme",
       "bonus": false
     },
     {
-      "description": "Verifica o select de gênero do componente <AddMovie />",
+      "description": "14 - Renderize um `select` do formulário em `AddMovie` para selecionar o gênero do novo filme",
       "bonus": false
     },
     {
-      "description": "Verifica botão de criar filme do componente <AddMovie />",
+      "description": "15 - Renderize um botão do formulário em `AddMovie` para fazer uso dos dados do novo filme, contidos no estado de `AddMovie`",
       "bonus": false
     },
     { "description": "Verifica o componente <Header />", "bonus": false },
