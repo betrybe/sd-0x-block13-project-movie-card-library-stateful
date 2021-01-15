@@ -1,20 +1,20 @@
 {
   "requirements": [
-    { "description": "Verifica o componente <AddMovie />", "bonus": false },
+    { "description": "1 - Crie um componente chamado `<SearchBar />`", "bonus": false },
     {
-      "description": "Verifica o input de título do componente <AddMovie />",
+      "description": "2 - Renderize um formulário dentro de `<SearchBar />`",
       "bonus": false
     },
     {
-      "description": "Verifica o input de subtítulo do componente <AddMovie />",
+      "description": "3 - Renderize um input do tipo texto dentro do formulário em `<SearchBar />`",
       "bonus": false
     },
     {
-      "description": "Verifica o input de imagem do componente <AddMovie />",
+      "description": "4 - Renderize um input do tipo checkbox dentro do formulário em `<SearchBar />`",
       "bonus": false
     },
     {
-      "description": "Verifica o input de sinopse do componente <AddMovie />",
+      "description": "5 - Renderize um select dentro do formulário em `<SearchBar />`",
       "bonus": false
     },
     {

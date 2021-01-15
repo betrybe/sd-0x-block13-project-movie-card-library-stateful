@@ -5,7 +5,7 @@ import '@testing-library/jest-dom';
 import Header from './Header';
 
 describe('Verifica o componente <Header />', () => {
-  it('renders without crashing', () => {
+  it('Será validado se o componente renderiza', () => {
     render(<Header />);
   });
 
