@@ -31,13 +31,13 @@
     },
     { "description": "Verifica o componente <Header />", "bonus": false },
     { "description": "Verifica o componente <MovieCard />", "bonus": false },
-    { "description": "Verifica o componente <MovieLibrary />", "bonus": false },
+    { "description": "16 - Crie um componente chamado `MovieLibrary`", "bonus": false },
     {
-      "description": "Verifica o estado inicial do component <MovieLibrary />",
+      "description": "17 - Configure o estado inicial do componente `MovieLibray`",
       "bonus": false
     },
     {
-      "description": "Verifica se o componente <MovieLibrary /> renderiza o componente <SearchBar />",
+      "description": "18 - Renderize `<SearchBar />` dentro de `MovieLibrary`",
       "bonus": false
     },
     {
@@ -45,10 +45,10 @@
       "bonus": false
     },
     {
-      "description": "Verifica se o componente <MovieLibrary /> renderiza o componente <AddMovie />",
+      "description": "20 - Renderize `AddMovie` dentro de `MovieLibrary`",
       "bonus": false
     },
-    { "description": "Verifica o componente <MovieList />", "bonus": false },
+    { "description": "19 - Renderize `MovieList` dentro de `MovieLibrary`", "bonus": false },
     { "description": "Verifica o componente <Rating />", "bonus": false },
     { "description": "Verifica o componente <SearchBar />", "bonus": false },
     {
