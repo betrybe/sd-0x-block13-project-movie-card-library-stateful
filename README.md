@@ -713,7 +713,6 @@ O estado inicial do componente `MovieLibrary` deve ser:
   - Será validado que é possivel filtrar por favoritos
   - Será validado que é possivel filtrar por categoria
 
-
 ### 20 - Renderize `AddMovie` dentro de `MovieLibrary`
 
 - A callback que permite adicionar um novo filme ao final da lista precisa ser passada para `AddMovie`.
