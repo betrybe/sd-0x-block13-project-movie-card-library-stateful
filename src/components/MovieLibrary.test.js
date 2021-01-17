@@ -36,13 +36,13 @@ const movies = [
 ];
 
 
-describe('Verifica o componente <MovieLibrary />', () => {
+describe('16 - Crie um componente chamado `MovieLibrary`', () => {
   it('Será validado se o componente é renderizado com sucesso', () => {
     render(<MovieLibrary movies={movies} />);
   });
 });
 
-describe('Verifica o estado inicial do component <MovieLibrary />', () => {
+describe('17 - Configure o estado inicial do componente `MovieLibray`', () => {
 
   
   it('Será validado se o `searchText` é inicializado com uma string vazia', () => {
@@ -70,7 +70,7 @@ describe('Verifica o estado inicial do component <MovieLibrary />', () => {
   });
 });
 
-describe('Verifica se o componente <MovieLibrary /> renderiza o componente <SearchBar />', () => {
+describe('18 - Renderize `<SearchBar />` dentro de `MovieLibrary`', () => {
   it('Será validado se um componente `SearchBar` é renderizado', () => {
     const { getAllByTestId } = render(<MovieLibrary movies={movies} />);
     const searchBar = getAllByTestId('search-bar-form');
@@ -105,7 +105,7 @@ describe('Verifica se o componente <MovieLibrary /> renderiza o componente <Sear
   });
 });
 
-describe('Verifica se o componente <MovieLibrary /> renderiza o componente <MovieList />', () => {
+describe('19 - Renderize `MovieList` dentro de `MovieLibrary`', () => {
   it('Será validado que o componente `MovieList` é renderizado com sucesso', () => {
     const { getAllByTestId } = render(<MovieLibrary movies={movies} />);
     const movieList = getAllByTestId('movie-list');
@@ -187,7 +187,7 @@ describe('Verifica se o componente <MovieLibrary /> renderiza o componente <Movi
   });
 });
 
-describe('Verifica se o componente <MovieLibrary /> renderiza o componente <AddMovie />', () => {
+describe('20 - Renderize `AddMovie` dentro de `MovieLibrary`', () => {
   it('Será validado se o componente `AddMovie` é renderizado com sucesso', () => {
     const { getAllByTestId } = render(<MovieLibrary movies={movies} />);
     const addMovieForm = getAllByTestId('add-movie-form');

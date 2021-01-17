@@ -52,17 +52,17 @@ beforeEach(() => {
 
 
 describe('6 - Crie um componente chamado `<AddMovie />`', () => {
-  it('Renderize o componente', () => {
+  it('Será validado se o componente renderiza', () => {
     render(<AddMovie onClick={() => jest.fn()} />);
   });
 
-  it('Renderize 1, e apenas 1, form', () => {
+  it('Será validado se o componente renderiza 1, e apenas 1, form', () => {
     expect(form).toHaveLength(1);
   });
 });
 
-describe('7 - Renderize um input do tipo texto dentro do formulário em `<AddMovie />` para obter o título do novo filme', () => {
-  it('Será validado se o component renderiza um input de texto para quem usa escrever o titulo do filme', () => {
+describe('9 - Renderize um input do tipo texto dentro do formulário em `AddMovie` para obter o título do novo filme', () => {
+  it('Será validado se o componente renderiza um input de texto para quem usa escrever o titulo do filme', () => {
     expect(titleInput).toBeInTheDocument();
   });
 
@@ -82,7 +82,7 @@ describe('7 - Renderize um input do tipo texto dentro do formulário em `<AddMov
   });
 });
 
-describe('Verifica o input de subtítulo do componente <AddMovie />', () => {
+describe('10 - Renderize um input do tipo texto dentro do formulário em `AddMovie` para obter o subtítulo do novo filme', () => {
   it('Será validado se o componentee renderiza um input de texto para quem usa escrever o subtítulo do filme', () => {
     expect(subtitleInput).toBeInTheDocument();
   });
@@ -103,7 +103,7 @@ describe('Verifica o input de subtítulo do componente <AddMovie />', () => {
   });
 });
 
-describe('Verifica o input de imagem do componente <AddMovie />', () => {
+describe('11 - Renderize um input do tipo texto dentro do formulário em `AddMovie` para obter o caminho da imagem do novo filme', () => {
   it('Será validado se o componente renderiza um input de texto para quem usa inserir a url da imagem do filme', () => {
     expect(imageInput).toBeInTheDocument();
   });
@@ -123,7 +123,7 @@ describe('Verifica o input de imagem do componente <AddMovie />', () => {
   });
 });
 
-describe('Verifica o input de sinopse do componente <AddMovie />', () => {
+describe('12 - Renderize uma `textarea` dentro do formulário em `AddMovie` para obter a sinopse do novo filme', () => {
   it('Será validado se o componente renderiza um input de texto para quem usa escrever a sinopse do filme', () => {
     expect(storylineInput).toBeInTheDocument();
   });
@@ -144,7 +144,7 @@ describe('Verifica o input de sinopse do componente <AddMovie />', () => {
   });
 });
 
-describe('Verifica o input de avaliação do componente <AddMovie />', () => {
+describe('13 - Renderize um `input` do tipo `number` dentro do formulário em `AddMovie` para obter a avaliação do novo filme', () => {
   it('Será validado se o componente renderiza um input de texto para quem usa escrever a avaliação do filme', () => {
     expect(ratingInput).toBeInTheDocument();
   });
@@ -165,7 +165,7 @@ describe('Verifica o input de avaliação do componente <AddMovie />', () => {
   });
 });
 
-describe('Verifica o select de gênero do componente <AddMovie />', () => {
+describe('14 - Renderize um `select` do formulário em `AddMovie` para selecionar o gênero do novo filme', () => {
   const options = [
     { value: 'action', text: 'Ação' },
     { value: 'comedy', text: 'Comédia' },
@@ -201,7 +201,7 @@ describe('Verifica o select de gênero do componente <AddMovie />', () => {
   });
 });
 
-describe('Verifica botão de criar filme do componente <AddMovie />', () => {
+describe('15 - Renderize um botão do formulário em `AddMovie` para fazer uso dos dados do novo filme, contidos no estado de `AddMovie`', () => {
 
 
   it('Será validado se o texto do botão é "Adicionar filme"', () => {
