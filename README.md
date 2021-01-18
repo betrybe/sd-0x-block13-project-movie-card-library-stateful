@@ -30,25 +30,25 @@ F
     - [Dica: desativando testes](#dica-desativando-testes)
     - [Dica: watch mode](#dica-watch-mode)
 - [Requisitos do projeto](#requisitos-do-projeto)
-    - [1 - Crie um componente chamado `<SearchBar />`](#1---crie-um-componente-chamado-searchbar)
-    - [2 - Renderize um formulário dentro de `<SearchBar />`](#2---renderize-um-formulário-dentro-de-searchbar)
-    - [3 - Renderize um input do tipo texto dentro do formulário em `<SearchBar />`](#3---renderize-um-input-do-tipo-texto-dentro-do-formulário-em-searchbar)
-    - [4 - Renderize um input do tipo checkbox dentro do formulário em `<SearchBar />`](#4---renderize-um-input-do-tipo-checkbox-dentro-do-formulário-em-searchbar)
-    - [5 - Renderize um select dentro do formulário em `<SearchBar />`](#5---renderize-um-select-dentro-do-formulário-em-searchbar)
-    - [6 - Crie um componente chamado `<AddMovie />`](#6---crie-um-componente-chamado-addmovie)
-    - [7 - Renderize um formulário dentro de `<AddMovie />`](#7---renderize-um-formulário-dentro-de-addmovie)
-    - [8 - Renderize um input do tipo texto dentro do formulário em `<AddMovie />` para obter o título do novo filme](#8---renderize-um-input-do-tipo-texto-dentro-do-formulário-em-addmovie-para-obter-o-título-do-novo-filme)
-    - [9 - Renderize um input do tipo texto dentro do formulário em `<AddMovie />` para obter o subtítulo do novo filme](#9---renderize-um-input-do-tipo-texto-dentro-do-formulário-em-addmovie-para-obter-o-subtítulo-do-novo-filme)
-    - [10 - Renderize um input do tipo texto dentro do formulário em `<AddMovie />` para obter o caminho da imagem do novo filme](#10---renderize-um-input-do-tipo-texto-dentro-do-formulário-em-addmovie-para-obter-o-caminho-da-imagem-do-novo-filme)
-    - [11 - Renderize uma `textarea` dentro do formulário em `<AddMovie />` para obter a sinopse do novo filme](#11---renderize-uma-textarea-dentro-do-formulário-em-addmovie-para-obter-a-sinopse-do-novo-filme)
-    - [12 - Renderize um `input` do tipo `number` dentro do formulário em `<AddMovie />` para obter a avaliação do novo filme](#12---renderize-um-input-do-tipo-number-dentro-do-formulário-em-addmovie-para-obter-a-avaliação-do-novo-filme)
-    - [13 - Renderize um `select` do formulário em `<AddMovie />` para selecionar o gênero do novo filme](#13---renderize-um-select-do-formulário-em-addmovie-para-selecionar-o-gênero-do-novo-filme)
-    - [14 - Renderize um botão do formulário em `<AddMovie />` para fazer uso dos dados do novo filme, contidos no estado de `<AddMovie />`](#14---renderize-um-botão-do-formulário-em-addmovie-para-fazer-uso-dos-dados-do-novo-filme-contidos-no-estado-de-addmovie)
-    - [15 - Crie um componente chamado `MovieLibrary`](#15---crie-um-componente-chamado-movielibrary)
-    - [16 - Configure o estado inicial do componente `MovieLibray`](#16---configure-o-estado-inicial-do-componente-movielibray)
-    - [17 - Renderize `<SearchBar />` dentro de `MovieLibrary`](#17---renderize-searchbar-dentro-de-movielibrary)
-    - [18 - Renderize `MovieList` dentro de `MovieLibrary`](#18---renderize-movielist-dentro-de-movielibrary)
-    - [19 - Renderize `<AddMovie />` dentro de `MovieLibrary`](#19---renderize-addmovie-dentro-de-movielibrary)
+    - [1 - Crie um componente chamado `<SearchBar />`](#1---crie-um-componente-chamado-searchbar-)
+    - [2 - Renderize um formulário dentro de `<SearchBar />`](#2---renderize-um-formulário-dentro-de-searchbar-)
+    - [3 - Renderize um input do tipo texto dentro do formulário em `<SearchBar />`](#3---renderize-um-input-do-tipo-texto-dentro-do-formulário-em-searchbar-)
+    - [4 - Renderize um input do tipo checkbox dentro do formulário em `<SearchBar />`](#4---renderize-um-input-do-tipo-checkbox-dentro-do-formulário-em-searchbar-)
+    - [5 - Renderize um select dentro do formulário em `<SearchBar />`](#5---renderize-um-select-dentro-do-formulário-em-searchbar-)
+    - [6 - Crie um componente chamado `<AddMovie />`](#6---crie-um-componente-chamado-addmovie-)
+    - [7 - Renderize um formulário dentro de `<AddMovie />`](#7---renderize-um-formulário-dentro-de-addmovie-)
+    - [8 - Renderize um input do tipo texto dentro do formulário em `<AddMovie />` para obter o título do novo filme](#8---renderize-um-input-do-tipo-texto-dentro-do-formulário-em-addmovie--para-obter-o-título-do-novo-filme)
+    - [9 - Renderize um input do tipo texto dentro do formulário em `<AddMovie />` para obter o subtítulo do novo filme](#9---renderize-um-input-do-tipo-texto-dentro-do-formulário-em-addmovie--para-obter-o-subtítulo-do-novo-filme)
+    - [10 - Renderize um input do tipo texto dentro do formulário em `<AddMovie />` para obter o caminho da imagem do novo filme](#10---renderize-um-input-do-tipo-texto-dentro-do-formulário-em-addmovie--para-obter-o-caminho-da-imagem-do-novo-filme)
+    - [11 - Renderize uma `textarea` dentro do formulário em `<AddMovie />` para obter a sinopse do novo filme](#11---renderize-uma-textarea-dentro-do-formulário-em-addmovie--para-obter-a-sinopse-do-novo-filme)
+    - [12 - Renderize um `input` do tipo `number` dentro do formulário em `<AddMovie />` para obter a avaliação do novo filme](#12---renderize-um-input-do-tipo-number-dentro-do-formulário-em-addmovie--para-obter-a-avaliação-do-novo-filme)
+    - [13 - Renderize um `select` do formulário em `<AddMovie />` para selecionar o gênero do novo filme](#13---renderize-um-select-do-formulário-em-addmovie--para-selecionar-o-gênero-do-novo-filme)
+    - [14 - Renderize um botão do formulário em `<AddMovie />` para fazer uso dos dados do novo filme, contidos no estado de `<AddMovie />`](#14---renderize-um-botão-do-formulário-em-addmovie--para-fazer-uso-dos-dados-do-novo-filme-contidos-no-estado-de-addmovie)
+    - [15 - Crie um componente chamado `<MovieLibrary />`](#15---crie-um-componente-chamado-movielibrary-)
+    - [16 - Configure o estado inicial do componente `<MovieLibrary />`](#16---configure-o-estado-inicial-do-componente-movielibray-)
+    - [17 - Renderize `<SearchBar />` dentro de `<MovieLibrary />`](#17---renderize-searchbar-dentro-de-movielibrary-)
+    - [18 - Renderize `<MovieList />` dentro de `<MovieLibrary />`](#18---renderize-movielist--dentro-de-movielibrary-)
+    - [19 - Renderize `<AddMovie />` dentro de `<MovieLibrary />`](#19---renderize-addmovie-dentro-de-movielibrary-)
     - [20 - Adicione proptypes a todos os componentes](#20---adicione-proptypes-a-todos-os-componentes)
 - [Avisos Finais](#avisos-finais)
 
@@ -125,7 +125,7 @@ controlada por estados.
     * Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
     * Exemplo: `git checkout -b joaozinho-movie-card-library-stateful`
 
-4. Faça alterações em algum dos componentes que precisam de implementação, por exemplo o `MovieLibrary` em `src/components`:
+4. Faça alterações em algum dos componentes que precisam de implementação, por exemplo o `<MovieLibrary />` em `src/components`:
 ```jsx
 import React, { Component } from 'react';
 
@@ -237,7 +237,7 @@ Esse projeto contém os seguintes `React Components`:
    - Rating
    - AddMovie
 
-`Header`, `MovieList`, `MovieCard` e `Rating` já estão implementados. `MovieLibrary`, `<SearchBar />` e `<AddMovie />` já estão criados, mas precisam ser implementados de forma a passarem nos requisitos listados abaixo.
+`Header`, `<MovieList />`, `MovieCard` e `Rating` já estão implementados. `<MovieLibrary />`, `<SearchBar />` e `<AddMovie />` já estão criados, mas precisam ser implementados de forma a passarem nos requisitos listados abaixo.
 
 Todos os componentes devem ser criados dentro da pasta `src/components`. **É obrigatório que seus componentes tenham exatamente os nomes listados acima**.
 
@@ -355,7 +355,7 @@ Ao executar os testes localmente, [Jest](https://jestjs.io/), a ferramenta que e
 
 ### 1 - Crie um componente chamado `<SearchBar />`
 
-Esse componente renderizará uma barra com filtros acima da listagem de cartões. Quais cartões serão mostrados no componente `MovieList` dependerá dos filtros escolhidos. `<SearchBar />` deve receber como props:
+Esse componente renderizará uma barra com filtros acima da listagem de cartões. Quais cartões serão mostrados no componente `<MovieList />` dependerá dos filtros escolhidos. `<SearchBar />` deve receber como props:
 
   - `searchText`, uma string
   - `onSearchTextChange`, uma callback
@@ -625,11 +625,11 @@ Dentro desse formulário haverá campos usados para preencher informações do n
   - Será validado se o evento onClick é chamado ao se clicar no botão.
   - Será validado se o estado dos inputs volta ao inicial depois que o botão de adicionar é clicado.
 
-### 15 - Crie um componente chamado `MovieLibrary`
+### 15 - Crie um componente chamado `<MovieLibrary />`
 
 Esse componente renderizará a biblioteca de filmes que renderizará a `searchBar` e o `addMovies` para filtrar por filmes e adicionar um filme à biblioteca respectivamente.
 
-`MovieLibrary` deve receber como props:
+`<MovieLibrary />` deve receber como props:
 
   - `movies`, um array
 
@@ -639,16 +639,16 @@ Esse componente renderizará a biblioteca de filmes que renderizará a `searchBa
 
 ### 16 - Configure o estado inicial do componente `MovieLibray`
 
-O componente `MovieLibrary` possui como estado as seguintes propriedades:
+O componente `<MovieLibrary />` possui como estado as seguintes propriedades:
 
   - `searchText`: guarda o texto de busca por filmes;
   - `bookmarkedOnly`: um _boolean_ que guarda se é para filtrar por filmes favoritados ou não;
   - `selectedGenre`: guarda o gênero do filme selecionado para poder fazer a filtragem;
   - `movies`: guarda a lista de filmes.
 
-Ou seja, o estado de `MovieLibrary` contém a lista de filmes e os filtros a serem aplicados sobre a listagem.
+Ou seja, o estado de `<MovieLibrary />` contém a lista de filmes e os filtros a serem aplicados sobre a listagem.
 
-O estado inicial do componente `MovieLibrary` deve ser:
+O estado inicial do componente `<MovieLibrary />` deve ser:
 
   - `searchText`: '';
   - `bookmarkedOnly`: false;
@@ -662,19 +662,19 @@ O estado inicial do componente `MovieLibrary` deve ser:
   - Será validado se o todos os `movies` são renderezidados.
 
 
-### 17 - Renderize `<SearchBar />` dentro de `MovieLibrary`
+### 17 - Renderize `<SearchBar />` dentro de `<MovieLibrary />`
 
-- `searchText` oriundo do estado de `MovieLibrary` deve ser passado para a prop `searchText` de `<SearchBar />`;
+- `searchText` oriundo do estado de `<MovieLibrary />` deve ser passado para a prop `searchText` de `<SearchBar />`;
 
-- A callback para atualizar o estado de `MovieLibrary` em `searchText` precisa ser passada para `<SearchBar />`;
+- A callback para atualizar o estado de `<MovieLibrary />` em `searchText` precisa ser passada para `<SearchBar />`;
 
-- `bookmarkedOnly` oriundo do estado de `MovieLibrary` deve ser passado para a prop `bookmarkedOnly` de `<SearchBar />`;
+- `bookmarkedOnly` oriundo do estado de `<MovieLibrary />` deve ser passado para a prop `bookmarkedOnly` de `<SearchBar />`;
 
-- A callback para atualizar o estado de `MovieLibrary` em `bookmarkedOnly` precisa ser passada para `<SearchBar />`;
+- A callback para atualizar o estado de `<MovieLibrary />` em `bookmarkedOnly` precisa ser passada para `<SearchBar />`;
 
-- `selectedGenre` oriundo do estado de `MovieLibrary` deve ser passado para a prop `selectedGenre` de `<SearchBar />`;
+- `selectedGenre` oriundo do estado de `<MovieLibrary />` deve ser passado para a prop `selectedGenre` de `<SearchBar />`;
 
-- A callback para atualizar o estado de `MovieLibrary` em `selectedGenre` precisa ser passada para `<SearchBar />`.
+- A callback para atualizar o estado de `<MovieLibrary />` em `selectedGenre` precisa ser passada para `<SearchBar />`.
 
 **O que será verificado:**
   - Será validado se um componente `<SearchBar />` é renderizado
@@ -683,13 +683,13 @@ O estado inicial do componente `MovieLibrary` deve ser:
   - Será validado que é possivel escolher uma categoria uma categoria de filme para filtrar
 
 
-### 18 - Renderize `MovieList` dentro de `MovieLibrary`
+### 18 - Renderize `<MovieList />` dentro de `<MovieLibrary />`
 
-- Deve passar para a prop `movies` de `MovieList` todos os filmes filtrados;
+- Deve passar para a prop `movies` de `<MovieList />` todos os filmes filtrados;
 
 - Quando o estado para `bookmarkedOnly` é falso, não é alterada a listagem de filmes a ser renderizada;
 
-- Quando o estado para `bookmarkedOnly` é verdadeiro, deve ser renderizado por `MovieList` somente filmes favoritados;
+- Quando o estado para `bookmarkedOnly` é verdadeiro, deve ser renderizado por `<MovieList />` somente filmes favoritados;
 
 - Quando o estado para `selectedGenre` é vazio, não é alterada a listagem de filmes a ser renderizada;
 
@@ -697,13 +697,13 @@ O estado inicial do componente `MovieLibrary` deve ser:
 
 - Quando o estado para `searchText` é vazio, não é alterada a listagem de filmes a ser renderizada;
 
-- Quando o estado para `searchText` não é vazio, deve ser renderizado por `MovieList` filmes que satisfaçam a uma das condições abaixo:
+- Quando o estado para `searchText` não é vazio, deve ser renderizado por `<MovieList />` filmes que satisfaçam a uma das condições abaixo:
   - Filmes cujo título contém o que está presente em `searchText`, **ou**;
   - Filmes cujo subtítulo contém o que está presente em `searchText`, **ou**;
   - Filmes cuja sinopse contém o que está presente em` searchText`.
 
 **O que será verificado:**
-  - Será validado que o componente `MovieList` é renderizado com sucesso
+  - Será validado que o componente `<MovieList />` é renderizado com sucesso
   - Será validado se a barra de buscas filtra os filmes por titulo
   - Será validado se a barra de buscas filtra os filmes por subtítulo
   - Será validado se a barra de buscas filtra os filmes por sinopse
@@ -711,7 +711,7 @@ O estado inicial do componente `MovieLibrary` deve ser:
   - Será validado que é possivel filtrar por favoritos
   - Será validado que é possivel filtrar por categoria
 
-### 19 - Renderize `<AddMovie />` dentro de `MovieLibrary`
+### 19 - Renderize `<AddMovie />` dentro de `<MovieLibrary />`
 
 - A callback que permite adicionar um novo filme ao final da lista precisa ser passada para `<AddMovie />`.
 
