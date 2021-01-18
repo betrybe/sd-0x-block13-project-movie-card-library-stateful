@@ -284,7 +284,7 @@ A primeira parte da saída mostra um sumário de cada teste e seu status. Um ❌
 
 Abaixo do sumário, para cada teste falhando, há uma mensagem explicativa sobre o motivo que causou a falha do teste, assim como a linha em que a falha ocorreu. Na imagem, vemos que o teste falha porque o componente `Header`, utilizado na linha 38, não está definido.
 
-Por exemplo, se fizermos uma implementação simples do componente `<Header />`, não renderiza nada:
+Por exemplo, se fizermos uma implementação simples do componente `<Header />`, que não renderiza nada:
 
 ```jsx
 import React from 'react';
@@ -297,7 +297,7 @@ class Header extends React.Component {
 export default Header;
 ```
 
-E nesse caso descomentarmos a linha que importa o componente `Header` em `App.test.js`:
+E nesse caso descomentarmos a linha que importa o componente `<Header />` em `App.test.js`:
 
 ```js
 // import App from './App';
@@ -336,6 +336,12 @@ Na saída da execução dos testes, você verá um <img src="orange-circle.png" 
 ![image](skipped-test.png)
 
 Uma estratégia é pular todos os testes no início e ir implementando um teste de cada vez, removendo dele a função `skip`.
+
+Você também pode rodar apenas um arquivo de teste, por exemplo:
+
+```bash
+npm run test SearchBar.test.js
+```
 
 ⚠️ Lembre-se de não entregar o projeto com nenhum teste ignorado. **Testes ignorados serão tratados como testes falhando**. ⚠️
 
