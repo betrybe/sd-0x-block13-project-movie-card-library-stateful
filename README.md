@@ -237,7 +237,7 @@ Esse projeto contém os seguintes `React Components`:
    - Rating
    - AddMovie
 
-`Header`, `<MovieList />`, `MovieCard` e `Rating` já estão implementados com os testes passando. `<MovieLibrary />`, `<SearchBar />` e `<AddMovie />` já estão criados, mas precisam ser implementados de forma a passarem nos requisitos listados abaixo.
+`<Header />`, `<MovieList />`, `<MovieCard />` e `<Rating />` **já estão implementados com os testes passando**. `<MovieLibrary />`, `<SearchBar />` e `<AddMovie />` já estão criados, mas precisam ser implementados de forma a passarem nos requisitos listados abaixo.
 
 Todos os componentes devem ser criados dentro da pasta `src/components`. **É obrigatório que seus componentes tenham exatamente os nomes listados acima**.
 
@@ -284,7 +284,7 @@ A primeira parte da saída mostra um sumário de cada teste e seu status. Um ❌
 
 Abaixo do sumário, para cada teste falhando, há uma mensagem explicativa sobre o motivo que causou a falha do teste, assim como a linha em que a falha ocorreu. Na imagem, vemos que o teste falha porque o componente `Header`, utilizado na linha 38, não está definido.
 
-Por exemplo, se fizermos uma implementação simples do componente `Header`, não renderiza nada:
+Por exemplo, se fizermos uma implementação simples do componente `<Header />`, não renderiza nada:
 
 ```jsx
 import React from 'react';
@@ -315,7 +315,7 @@ Quando seu projeto estiver terminado, todos os testes deverão estar passando:
 
 ![image](all-green.png)
 
-**Atenção:** O projeto já conta com os testes dos componentes `Header`, `MovieList`, `MovieCard` e `Rating` passando nos requisitos. Fique atento, pois nesse projeto cada componente possui seu próprio arquivo de teste.
+**Atenção:** Fique atento, nesse projeto cada componente possui seu próprio arquivo de teste e nada precisa ser descomentado.
 
 ---
 
