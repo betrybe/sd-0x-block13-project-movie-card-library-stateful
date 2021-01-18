@@ -104,9 +104,9 @@ controlada por estados.
 ## Antes de começar a desenvolver
 
 1. Clone o repositório
-  * `git clone git@github.com:tryber/sd-0x-project-movie-card-library-stateful.git`.
+  * `git clone git@github.com:tryber/sd-0x-project-movie-cards-library-stateful.git`.
   * Entre na pasta do repositório que você acabou de clonar:
-    * `cd sd-0x-project-movie-card-library-stateful`
+    * `cd sd-0x-project-movie-cards-library-stateful`
 
 2. Instale as dependências, inicialize o projeto e rode os testes
   * Instale as dependências:
@@ -123,7 +123,7 @@ controlada por estados.
     * Exemplo: `git checkout master`
   * Agora, crie uma branch onde você vai guardar os `commits` do seu projeto
     * Você deve criar uma branch no seguinte formato: `nome-de-usuario-nome-do-projeto`
-    * Exemplo: `git checkout -b joaozinho-movie-card-library-stateful`
+    * Exemplo: `git checkout -b joaozinho-movie-cards-library-stateful`
 
 4. Faça alterações em algum dos componentes que precisam de implementação, por exemplo o `<MovieLibrary />` em `src/components`:
 ```jsx
@@ -169,13 +169,13 @@ export default MovieLibrary;
   * Usando o exemplo anterior: `git push -u origin joaozinho-movie-cards-library-stateful`
 
 7. Crie um novo `Pull Request` _(PR)_
-  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-project-movie-card-library-stateful/pulls)
+  * Vá até a página de _Pull Requests_ do [repositório no GitHub](https://github.com/tryber/sd-0x-project-movie-cards-library-stateful/pulls)
   * Clique no botão verde _"New pull request"_
   * Clique na caixa de seleção _"Compare"_ e escolha a sua branch **com atenção**
   * Clique no botão verde _"Create pull request"_
   * Adicione uma descrição para o _Pull Request_ e clique no botão verde _"Create pull request"_
   * **Não se preocupe em preencher mais nada por enquanto!**
-  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-project-movie-card-library-stateful/pulls) e confira que o seu _Pull Request_ está criado
+  * Volte até a [página de _Pull Requests_ do repositório](https://github.com/tryber/sd-0x-project-movie-cards-library-stateful/pulls) e confira que o seu _Pull Request_ está criado
 
 ---
 
@@ -237,7 +237,7 @@ Esse projeto contém os seguintes `React Components`:
    - Rating
    - AddMovie
 
-`Header`, `<MovieList />`, `MovieCard` e `Rating` já estão implementados. `<MovieLibrary />`, `<SearchBar />` e `<AddMovie />` já estão criados, mas precisam ser implementados de forma a passarem nos requisitos listados abaixo.
+`Header`, `<MovieList />`, `MovieCard` e `Rating` já estão implementados com os testes passando. `<MovieLibrary />`, `<SearchBar />` e `<AddMovie />` já estão criados, mas precisam ser implementados de forma a passarem nos requisitos listados abaixo.
 
 Todos os componentes devem ser criados dentro da pasta `src/components`. **É obrigatório que seus componentes tenham exatamente os nomes listados acima**.
 
@@ -284,7 +284,7 @@ A primeira parte da saída mostra um sumário de cada teste e seu status. Um ❌
 
 Abaixo do sumário, para cada teste falhando, há uma mensagem explicativa sobre o motivo que causou a falha do teste, assim como a linha em que a falha ocorreu. Na imagem, vemos que o teste falha porque o componente `Header`, utilizado na linha 38, não está definido.
 
-Se fizermos uma implementação simples do componente `Header`, que não renderiza nada:
+Por exemplo, se fizermos uma implementação simples do componente `Header`, não renderiza nada:
 
 ```jsx
 import React from 'react';
@@ -297,7 +297,7 @@ class Header extends React.Component {
 export default Header;
 ```
 
-E descomentarmos a linha que importa o componente `Header` em `App.test.js`:
+E nesse caso descomentarmos a linha que importa o componente `Header` em `App.test.js`:
 
 ```js
 // import App from './App';
@@ -314,6 +314,8 @@ Veremos que o primeiro teste agora passa:
 Quando seu projeto estiver terminado, todos os testes deverão estar passando:
 
 ![image](all-green.png)
+
+**Atenção:** O projeto já conta com os testes dos componentes `Header`, `MovieList`, `MovieCard` e `Rating` passando nos requisitos. Fique atento, pois nesse projeto cada componente possui seu próprio arquivo de teste.
 
 ---
 
