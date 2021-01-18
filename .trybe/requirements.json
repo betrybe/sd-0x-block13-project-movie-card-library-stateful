@@ -1,70 +1,55 @@
 {
   "requirements": [
-    { "description": "Verifica o componente <AddMovie />", "bonus": false },
+    { "description": "1 - Crie um componente chamado `<SearchBar />`", "bonus": false },
     {
-      "description": "Verifica o input de título do componente <AddMovie />",
+      "description": "2 - Renderize um formulário dentro de `<SearchBar />`",
       "bonus": false
     },
     {
-      "description": "Verifica o input de subtítulo do componente <AddMovie />",
+      "description": "3 - Renderize um input do tipo texto dentro do formulário em `<SearchBar />`",
       "bonus": false
     },
     {
-      "description": "Verifica o input de imagem do componente <AddMovie />",
+      "description": "4 - Renderize um input do tipo checkbox dentro do formulário em `<SearchBar />`",
       "bonus": false
     },
     {
-      "description": "Verifica o input de sinopse do componente <AddMovie />",
+      "description": "5 - Renderize um select dentro do formulário em `<SearchBar />`",
+      "bonus": false
+    },
+    { "description": "6 - Crie um componente chamado `<AddMovie />`", "bonus": false },
+    { "description": "7 - Renderize um formulário dentro de `<AddMovie />`", "bonus": false },
+    { "description": "8 - Renderize um input do tipo texto dentro do formulário em `<AddMovie />` para obter o título do novo filme", "bonus": false },
+    {
+      "description": "9 - Renderize um input do tipo texto dentro do formulário em `<AddMovie />` para obter o subtítulo do novo filme",
+      "bonus": false
+    },
+    { "description": "10 - Renderize um input do tipo texto dentro do formulário em `<AddMovie />` para obter o caminho da imagem do novo filme", "bonus": false },
+    { "description": "11 - Renderize uma `textarea` dentro do formulário em `<AddMovie />` para obter a sinopse do novo filme", "bonus": false },
+    {
+      "description": "12 - Renderize um `input` do tipo `number` dentro do formulário em `<AddMovie />` para obter a avaliação do novo filme",
       "bonus": false
     },
     {
-      "description": "Verifica o input de avaliação do componente <AddMovie />",
+      "description": "13 - Renderize um `select` do formulário em `<AddMovie />` para selecionar o gênero do novo filme",
       "bonus": false
     },
     {
-      "description": "Verifica o select de gênero do componente <AddMovie />",
+      "description": "14 - Renderize um botão do formulário em `<AddMovie />` para fazer uso dos dados do novo filme, contidos no estado de `<AddMovie />`",
+      "bonus": false
+    },
+    { "description": "15 - Crie um componente chamado `MovieLibrary`", "bonus": false },
+    {
+      "description": "16 - Configure o estado inicial do componente `MovieLibray`",
       "bonus": false
     },
     {
-      "description": "Verifica botão de criar filme do componente <AddMovie />",
+      "description": "17 - Renderize `<SearchBar />` dentro de `MovieLibrary`",
       "bonus": false
     },
-    { "description": "Verifica o componente <Header />", "bonus": false },
-    { "description": "Verifica o componente <MovieCard />", "bonus": false },
-    { "description": "Verifica o componente <MovieLibrary />", "bonus": false },
+    { "description": "18 - Renderize `MovieList` dentro de `MovieLibrary`", "bonus": false },
     {
-      "description": "Verifica o estado inicial do component <MovieLibrary />",
-      "bonus": false
-    },
-    {
-      "description": "Verifica se o componente <MovieLibrary /> renderiza o componente <SearchBar />",
-      "bonus": false
-    },
-    {
-      "description": "Verifica se o componente <MovieLibrary /> renderiza o componente <MovieList />",
-      "bonus": false
-    },
-    {
-      "description": "Verifica se o componente <MovieLibrary /> renderiza o componente <AddMovie />",
-      "bonus": false
-    },
-    { "description": "Verifica o componente <MovieList />", "bonus": false },
-    { "description": "Verifica o componente <Rating />", "bonus": false },
-    { "description": "Verifica o componente <SearchBar />", "bonus": false },
-    {
-      "description": "Verifica o Form dentro do componente <SearchBar />",
-      "bonus": false
-    },
-    {
-      "description": "Verifica o input de texto do componente <SearchBar />",
-      "bonus": false
-    },
-    {
-      "description": "Verfica que o componente <SearchBar /> renderiza uma checkbox.",
-      "bonus": false
-    },
-    {
-      "description": "Verifica se o componente <SearchBar /> renderiza um select de gênero",
+      "description": "19 - Renderize `<AddMovie />` dentro de `MovieLibrary`",
       "bonus": false
     }
   ]
