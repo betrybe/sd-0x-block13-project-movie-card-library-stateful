@@ -26,7 +26,7 @@ jobs:
         id: evaluator
         uses: betrybe/react-scripts-evaluator-action@v4
         with:
-          repository-test-name: 'betrybe/sd-0x-project-movie-card-library-stateful-tests'
+          repository-test-name: 'betrybe/sd-0x-project-movie-cards-library-stateful-tests'
           repository-test-branch: 'master'
       - name: Store evaluation step
         uses: betrybe/store-evaluation-action@v2
