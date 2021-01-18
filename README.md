@@ -270,7 +270,7 @@ ATENTE-SE PARA RESOLVÊ-LAS ANTES DE FINALIZAR O DESENVOLVIMENTO!** ⚠️
 
 ## Testes
 
-Todos os requisitos do projeto serão testados **automaticamente**. Cada componente possui vários requisitos. Os testes para cada requisito de um componente estão no arquivo de teste correspondente.
+Todos os requisitos do projeto serão testados **automaticamente**. Cada componente possui vários requisitos e os testes para cada requisito de um componente estão no arquivo de teste correspondente.
 
 _**Por exemplo**: Os requisitos relacionados ao componente `<SearchBar />` estão no arquivo `SearchBar.test.js`._
 
