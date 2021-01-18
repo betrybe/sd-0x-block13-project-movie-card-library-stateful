@@ -35,22 +35,21 @@ F
     - [3 - Renderize um input do tipo texto dentro do formulário em `<SearchBar />`](#3---renderize-um-input-do-tipo-texto-dentro-do-formulário-em-searchbar)
     - [4 - Renderize um input do tipo checkbox dentro do formulário em `<SearchBar />`](#4---renderize-um-input-do-tipo-checkbox-dentro-do-formulário-em-searchbar)
     - [5 - Renderize um select dentro do formulário em `<SearchBar />`](#5---renderize-um-select-dentro-do-formulário-em-searchbar)
-    - [6 - Crie um componente chamado `AddMovie`](#6---crie-um-componente-chamado-addmovie)
-    - [7 - Configure o estado inicial do componente `AddMovie`](#7---configure-o-estado-inicial-do-componente-addmovie)
-    - [8 - Renderize um formulário dentro de `AddMovie`](#8---renderize-um-formulário-dentro-de-addmovie)
-    - [9 - Renderize um input do tipo texto dentro do formulário em `AddMovie` para obter o título do novo filme](#9---renderize-um-input-do-tipo-texto-dentro-do-formulário-em-addmovie-para-obter-o-título-do-novo-filme)
-    - [10 - Renderize um input do tipo texto dentro do formulário em `AddMovie` para obter o subtítulo do novo filme](#10---renderize-um-input-do-tipo-texto-dentro-do-formulário-em-addmovie-para-obter-o-subtítulo-do-novo-filme)
-    - [11 - Renderize um input do tipo texto dentro do formulário em `AddMovie` para obter o caminho da imagem do novo filme](#11---renderize-um-input-do-tipo-texto-dentro-do-formulário-em-addmovie-para-obter-o-caminho-da-imagem-do-novo-filme)
-    - [12 - Renderize uma `textarea` dentro do formulário em `AddMovie` para obter a sinopse do novo filme](#12---renderize-uma-textarea-dentro-do-formulário-em-addmovie-para-obter-a-sinopse-do-novo-filme)
-    - [13 - Renderize um `input` do tipo `number` dentro do formulário em `AddMovie` para obter a avaliação do novo filme](#13---renderize-um-input-do-tipo-number-dentro-do-formulário-em-addmovie-para-obter-a-avaliação-do-novo-filme)
-    - [14 - Renderize um `select` do formulário em `AddMovie` para selecionar o gênero do novo filme](#14---renderize-um-select-do-formulário-em-addmovie-para-selecionar-o-gênero-do-novo-filme)
-    - [15 - Renderize um botão do formulário em `AddMovie` para fazer uso dos dados do novo filme, contidos no estado de `AddMovie`](#15---renderize-um-botão-do-formulário-em-addmovie-para-fazer-uso-dos-dados-do-novo-filme-contidos-no-estado-de-addmovie)
-    - [16 - Crie um componente chamado `MovieLibrary`](#16---crie-um-componente-chamado-movielibrary)
-    - [17 - Configure o estado inicial do componente `MovieLibray`](#17---configure-o-estado-inicial-do-componente-movielibray)
-    - [18 - Renderize `<SearchBar />` dentro de `MovieLibrary`](#18---renderize-searchbar-dentro-de-movielibrary)
-    - [19 - Renderize `MovieList` dentro de `MovieLibrary`](#19---renderize-movielist-dentro-de-movielibrary)
-    - [20 - Renderize `AddMovie` dentro de `MovieLibrary`](#20---renderize-addmovie-dentro-de-movielibrary)
-    - [21 - Adicione proptypes a todos os componentes](#21---adicione-proptypes-a-todos-os-componentes)
+    - [6 - Crie um componente chamado `<AddMovie />`](#6---crie-um-componente-chamado-addmovie)
+    - [7 - Renderize um formulário dentro de `<AddMovie />`](#7---renderize-um-formulário-dentro-de-addmovie)
+    - [8 - Renderize um input do tipo texto dentro do formulário em `<AddMovie />` para obter o título do novo filme](#8---renderize-um-input-do-tipo-texto-dentro-do-formulário-em-addmovie-para-obter-o-título-do-novo-filme)
+    - [9 - Renderize um input do tipo texto dentro do formulário em `<AddMovie />` para obter o subtítulo do novo filme](#9---renderize-um-input-do-tipo-texto-dentro-do-formulário-em-addmovie-para-obter-o-subtítulo-do-novo-filme)
+    - [10 - Renderize um input do tipo texto dentro do formulário em `<AddMovie />` para obter o caminho da imagem do novo filme](#10---renderize-um-input-do-tipo-texto-dentro-do-formulário-em-addmovie-para-obter-o-caminho-da-imagem-do-novo-filme)
+    - [11 - Renderize uma `textarea` dentro do formulário em `<AddMovie />` para obter a sinopse do novo filme](#11---renderize-uma-textarea-dentro-do-formulário-em-addmovie-para-obter-a-sinopse-do-novo-filme)
+    - [12 - Renderize um `input` do tipo `number` dentro do formulário em `<AddMovie />` para obter a avaliação do novo filme](#12---renderize-um-input-do-tipo-number-dentro-do-formulário-em-addmovie-para-obter-a-avaliação-do-novo-filme)
+    - [13 - Renderize um `select` do formulário em `<AddMovie />` para selecionar o gênero do novo filme](#13---renderize-um-select-do-formulário-em-addmovie-para-selecionar-o-gênero-do-novo-filme)
+    - [14 - Renderize um botão do formulário em `<AddMovie />` para fazer uso dos dados do novo filme, contidos no estado de `<AddMovie />`](#14---renderize-um-botão-do-formulário-em-addmovie-para-fazer-uso-dos-dados-do-novo-filme-contidos-no-estado-de-addmovie)
+    - [15 - Crie um componente chamado `MovieLibrary`](#15---crie-um-componente-chamado-movielibrary)
+    - [16 - Configure o estado inicial do componente `MovieLibray`](#16---configure-o-estado-inicial-do-componente-movielibray)
+    - [17 - Renderize `<SearchBar />` dentro de `MovieLibrary`](#17---renderize-searchbar-dentro-de-movielibrary)
+    - [18 - Renderize `MovieList` dentro de `MovieLibrary`](#18---renderize-movielist-dentro-de-movielibrary)
+    - [19 - Renderize `<AddMovie />` dentro de `MovieLibrary`](#19---renderize-addmovie-dentro-de-movielibrary)
+    - [20 - Adicione proptypes a todos os componentes](#20---adicione-proptypes-a-todos-os-componentes)
 - [Avisos Finais](#avisos-finais)
 
 # Habilidades
@@ -238,7 +237,7 @@ Esse projeto contém os seguintes `React Components`:
    - Rating
    - AddMovie
 
-`Header`, `MovieList`, `MovieCard` e `Rating` já estão implementados. `MovieLibrary`, `<SearchBar />` e `AddMovie` já estão criados, mas precisam ser implementados de forma a passarem nos requisitos listados abaixo.
+`Header`, `MovieList`, `MovieCard` e `Rating` já estão implementados. `MovieLibrary`, `<SearchBar />` e `<AddMovie />` já estão criados, mas precisam ser implementados de forma a passarem nos requisitos listados abaixo.
 
 Todos os componentes devem ser criados dentro da pasta `src/components`. **É obrigatório que seus componentes tenham exatamente os nomes listados acima**.
 
@@ -346,6 +345,8 @@ Uma estratégia é pular todos os testes no início e ir implementando um teste 
 
 Ao executar os testes localmente, [Jest](https://jestjs.io/), a ferramenta que executa os testes, entra em _watch mode_. Nesse modo, a cada vez que um arquivo é salvo, os testes são executados novamente. Isso pode aumentar sua produtividade removendo a necessidade de executar os testes manualmente o tempo todo. Você pode abrir uma aba no seu terminal ou no terminal do _VSCode_ e deixar o _Jest_ rodando nesse modo.
 
+⚠️  **Este trabalho contém alguns testes de componente não relacionados diretamente a requisitos! Estude-os e use-os para se orientar durante o desenvolvimento, garantindo que estejam sempre passando** ✅! ⚠️
+
 ---
 
 # Requisitos do projeto
@@ -442,7 +443,7 @@ Dentro desse formulário haverá campos usados na filtragem de cartões.
   - Será validado se a prop `onSelectedGenreChange` é passada para o atributo `onChange` do select
   - Será validado se são renderizadas 4 options dentro do select com os textos e valores, respectivamente: Todos e \'\', Ação e action, Comédia e comedy, Suspense e thriller
 
-### 6 - Crie um componente chamado `AddMovie`
+### 6 - Crie um componente chamado `<AddMovie />`
 
 Esse componente renderizará um formulário que permite adicionar na biblioteca um novo cartão de filme, dadas as seguintes informações do novo filme:
 
@@ -453,17 +454,11 @@ Esse componente renderizará um formulário que permite adicionar na biblioteca 
   - avaliação
   - gênero
 
-`AddMovie` deve receber como props:
+`<AddMovie />` deve receber como prop:
 
   - `onClick`, uma callback
 
-**O que será verificado:**
-  - Será validado se o componente renderiza
-  - Será validado se o componente renderiza 1, e apenas 1, form
-
-### 7 - Configure o estado inicial do componente `AddMovie`
-
-O componente `AddMovie` possui como estado as seguintes propriedades:
+O componente `<AddMovie />` possui como estado as seguintes propriedades:
 
   - `subtitle`: guarda o subtítulo preenchido no formulário por quem usa a aplicação;
   - `title`: guarda o título preenchido no formulário por quem usa a aplicação;
@@ -472,9 +467,7 @@ O componente `AddMovie` possui como estado as seguintes propriedades:
   - `rating`: guarda a nota de avaliação dada no formulário por quem usa a aplicação;
   - `genre`: guarda o gênero do filme selecionado no formulário por quem usa a aplicação.
 
-Ou seja, o estado de `AddMovie` contém as informações do novo filme que foram inseridas por quem usa a aplicação.
-
-O estado inicial do componente `AddMovie` deve ser:
+Ou seja, o estado de `<AddMovie />` contém as informações do novo filme que foram inseridas por quem usa a aplicação. O estado inicial do componente `<AddMovie />` deve ser:
 
   - `subtitle`: '';
   - `title`: '';
@@ -483,13 +476,19 @@ O estado inicial do componente `AddMovie` deve ser:
   - `rating`: 0;
   - `genre`: 'action'.
 
+**O que será verificado:**
+  - Será validado se o componente renderiza
 
-### 8 - Renderize um formulário dentro de `AddMovie`
+
+### 7 - Renderize um formulário dentro de `<AddMovie />`
 
 Dentro desse formulário haverá campos usados para preencher informações do novo cartão a ser adicionado na biblioteca.
 
+**O que será verificado:**
+  - Será validado se o componente renderiza 1, e apenas 1, form
 
-### 9 - Renderize um input do tipo texto dentro do formulário em `AddMovie` para obter o título do novo filme
+
+### 8 - Renderize um input do tipo texto dentro do formulário em `<AddMovie />` para obter o título do novo filme
 
 - O input deve ter uma label associada com o texto: **"Título"**;
 
@@ -499,7 +498,7 @@ Dentro desse formulário haverá campos usados para preencher informações do n
 
 - Esse input deve apresentar o atributo `data-testid="title-input"`
 
-- A propriedade `onChange` deve atualizar o estado de `AddMovie`, atribuindo a `title` o atual título contido no input.
+- A propriedade `onChange` deve atualizar o estado de `<AddMovie />`, atribuindo a `title` o atual título contido no input.
 
 **O que será verificado:**
   - Será validado se o componente renderiza um input de texto para quem usa escrever o titulo do filme
@@ -508,8 +507,7 @@ Dentro desse formulário haverá campos usados para preencher informações do n
   - Será validado se o valor do input de título muda quando algo é digitado por quem usa.
 
 
-
-### 10 - Renderize um input do tipo texto dentro do formulário em `AddMovie` para obter o subtítulo do novo filme
+### 9 - Renderize um input do tipo texto dentro do formulário em `<AddMovie />` para obter o subtítulo do novo filme
 
 - O input deve ter uma label associada com o texto: **"Subtítulo"**;
 
@@ -519,7 +517,7 @@ Dentro desse formulário haverá campos usados para preencher informações do n
 
 - Esse input deve apresentar o atributo `data-testid="subtitle-input"`
 
-- A propriedade `onChange` deve atualizar o estado de `AddMovie`, atribuindo a `subtitle` o atual subtítulo contido no input.
+- A propriedade `onChange` deve atualizar o estado de `<AddMovie />`, atribuindo a `subtitle` o atual subtítulo contido no input.
 
 **O que será verificado:**
   - Será validado se o componentee renderiza um input de texto para quem usa escrever o subtítulo do filme
@@ -528,7 +526,7 @@ Dentro desse formulário haverá campos usados para preencher informações do n
   - Será validado se o valor do input de subtitulo muda quando algo é digitado pelo usuário
 
 
-### 11 - Renderize um input do tipo texto dentro do formulário em `AddMovie` para obter o caminho da imagem do novo filme
+### 10 - Renderize um input do tipo texto dentro do formulário em `<AddMovie />` para obter o caminho da imagem do novo filme
 
 - O input deve ter uma label associada com o texto: **"Imagem"**;
 
@@ -538,7 +536,7 @@ Dentro desse formulário haverá campos usados para preencher informações do n
 
 - Esse input deve apresentar o atributo `data-testid="image-input"`
 
-- A propriedade `onChange` deve atualizar o estado de `AddMovie`, atribuindo a `imagePath` o atual caminho da imagem contido no input.
+- A propriedade `onChange` deve atualizar o estado de `<AddMovie />`, atribuindo a `imagePath` o atual caminho da imagem contido no input.
 
 **O que será verificado:**
   - Será validado se o componente renderiza um input de texto para quem usa inserir a url da imagem do filme
@@ -547,7 +545,7 @@ Dentro desse formulário haverá campos usados para preencher informações do n
   - Será validado se o valor do input de imagem muda quando algo é digitado por quem usa
 
 
-### 12 - Renderize uma `textarea` dentro do formulário em `AddMovie` para obter a sinopse do novo filme
+### 11 - Renderize uma `textarea` dentro do formulário em `<AddMovie />` para obter a sinopse do novo filme
 
 - A `textarea` deve ter uma label associada com o texto: **"Sinopse"**;
 
@@ -557,7 +555,7 @@ Dentro desse formulário haverá campos usados para preencher informações do n
 
 - Essa `textarea` deve apresentar o atributo `data-testid="storyline-input"`
 
-- A propriedade `onChange` deve atualizar o estado de `AddMovie`, atribuindo a `storyline` a sinopse atual continda na `textarea`.
+- A propriedade `onChange` deve atualizar o estado de `<AddMovie />`, atribuindo a `storyline` a sinopse atual continda na `textarea`.
 
 **O que será verificado:**
   - Será validado se o componente renderiza um input de texto para quem usa escrever a sinopse do filme
@@ -566,7 +564,7 @@ Dentro desse formulário haverá campos usados para preencher informações do n
   - Será validado se o valor do input de sinopse muda quando algo é digitado por quem usa
 
 
-### 13 - Renderize um `input` do tipo `number` dentro do formulário em `AddMovie` para obter a avaliação do novo filme
+### 12 - Renderize um `input` do tipo `number` dentro do formulário em `<AddMovie />` para obter a avaliação do novo filme
 
 - O `input` deve ter uma label associada com o texto: **"Avaliação"**;
 
@@ -576,7 +574,7 @@ Dentro desse formulário haverá campos usados para preencher informações do n
 
 - Essa `input` deve apresentar o atributo `data-testid="rating-input"`
 
-- A propriedade `onChange` deve atualizar o estado de `AddMovie`, atribuindo a `rating` a avaliação atual continda no input.
+- A propriedade `onChange` deve atualizar o estado de `<AddMovie />`, atribuindo a `rating` a avaliação atual continda no input.
 
 **O que será verificado:**
   - Será validado se o componente renderiza um input de texto para quem usa escrever a avaliação do filme
@@ -585,7 +583,7 @@ Dentro desse formulário haverá campos usados para preencher informações do n
   - Será validado se o valor do input de avaliação muda quando algo é digitado por quem usa
 
 
-### 14 - Renderize um `select` do formulário em `AddMovie` para selecionar o gênero do novo filme
+### 13 - Renderize um `select` do formulário em `<AddMovie />` para selecionar o gênero do novo filme
 
 - O `select` deve ter uma label associada com o texto: **"Gênero"**;
 
@@ -595,7 +593,7 @@ Dentro desse formulário haverá campos usados para preencher informações do n
 
 - Essa `input` deve apresentar o atributo `data-testid="genre-input"`
 
-- A propriedade `onChange` deve atualizar o estado de `AddMovie`, atribuindo a `genre` o gênero atual selecionado;
+- A propriedade `onChange` deve atualizar o estado de `<AddMovie />`, atribuindo a `genre` o gênero atual selecionado;
 
 - O `select` deve renderizar três tags `option`, com as opções de filtragem por gênero, na seguinte ordem:
    - `Ação`, com o valor `action`;
@@ -612,22 +610,22 @@ Dentro desse formulário haverá campos usados para preencher informações do n
   - Será validado se o valor do gênero muda quando um gênero diferente é escolhido no select
 
 
-### 15 - Renderize um botão do formulário em `AddMovie` para fazer uso dos dados do novo filme, contidos no estado de `AddMovie`
+### 14 - Renderize um botão do formulário em `<AddMovie />` para fazer uso dos dados do novo filme, contidos no estado de `<AddMovie />`
 
 - O botão precisa ter escrito o seguinte texto: **"Adicionar filme"**;
 
 - O botão deve conter o atributo `data-testid="send-button"`
 
-- A propriedade `onClick` do botão invoca uma função definida por você, em `AddMovie`, que:
-  - Executa a callback passada para o componente `AddMovie` via props, chamada `onClick`, que recebe como parâmetro o estado atual de `AddMovie`;
-  - Reseta o estado de `AddMovie`, voltando para o inicial, conforme mencionado anteriormente.
+- A propriedade `onClick` do botão invoca uma função definida por você, em `<AddMovie />`, que:
+  - Executa a callback passada para o componente `<AddMovie />` via props, chamada `onClick`, que recebe como parâmetro o estado atual de `<AddMovie />`;
+  - Reseta o estado de `<AddMovie />`, voltando para o inicial, conforme mencionado anteriormente.
 
 **O que será verificado:**
   - Será validado se o texto do botão é "Adicionar filme"
   - Será validado se o evento onClick é chamado ao se clicar no botão.
   - Será validado se o estado dos inputs volta ao inicial depois que o botão de adicionar é clicado.
 
-### 16 - Crie um componente chamado `MovieLibrary`
+### 15 - Crie um componente chamado `MovieLibrary`
 
 Esse componente renderizará a biblioteca de filmes que renderizará a `searchBar` e o `addMovies` para filtrar por filmes e adicionar um filme à biblioteca respectivamente.
 
@@ -639,7 +637,7 @@ Esse componente renderizará a biblioteca de filmes que renderizará a `searchBa
   - Será validado se o componente é renderizado com sucesso
 
 
-### 17 - Configure o estado inicial do componente `MovieLibray`
+### 16 - Configure o estado inicial do componente `MovieLibray`
 
 O componente `MovieLibrary` possui como estado as seguintes propriedades:
 
@@ -664,7 +662,7 @@ O estado inicial do componente `MovieLibrary` deve ser:
   - Será validado se o todos os `movies` são renderezidados.
 
 
-### 18 - Renderize `<SearchBar />` dentro de `MovieLibrary`
+### 17 - Renderize `<SearchBar />` dentro de `MovieLibrary`
 
 - `searchText` oriundo do estado de `MovieLibrary` deve ser passado para a prop `searchText` de `<SearchBar />`;
 
@@ -685,7 +683,7 @@ O estado inicial do componente `MovieLibrary` deve ser:
   - Será validado que é possivel escolher uma categoria uma categoria de filme para filtrar
 
 
-### 19 - Renderize `MovieList` dentro de `MovieLibrary`
+### 18 - Renderize `MovieList` dentro de `MovieLibrary`
 
 - Deve passar para a prop `movies` de `MovieList` todos os filmes filtrados;
 
@@ -713,17 +711,17 @@ O estado inicial do componente `MovieLibrary` deve ser:
   - Será validado que é possivel filtrar por favoritos
   - Será validado que é possivel filtrar por categoria
 
-### 20 - Renderize `AddMovie` dentro de `MovieLibrary`
+### 19 - Renderize `<AddMovie />` dentro de `MovieLibrary`
 
-- A callback que permite adicionar um novo filme ao final da lista precisa ser passada para `AddMovie`.
+- A callback que permite adicionar um novo filme ao final da lista precisa ser passada para `<AddMovie />`.
 
 **O que será verificado:**
-  - Será validado se o componente `AddMovie` é renderizado com sucesso
+  - Será validado se o componente `<AddMovie />` é renderizado com sucesso
   - Será validado se é possível adicionar um novo filme a lista de filmes
 
-### 21 - Adicione proptypes a todos os componentes
+### 20 - Adicione proptypes a todos os componentes
 
-Todos os componentes que recebem props devem ter suas proptypes corretamente declaradas. O eslint checa automaticamente declaração de proptypes, portanto seu Pull Request deverá passar pela verificação do linter para satisfazer esse requisito.
+Todos os componentes que recebem props devem ter suas proptypes corretamente declaradas. **O ESlint checa automaticamente declaração de PropTypes, portanto seu Pull Request deverá passar pela verificação do linter para satisfazer esse requisito.**
 
 ---
 
