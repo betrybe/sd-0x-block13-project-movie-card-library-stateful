@@ -30,21 +30,11 @@ F
     - [Dica: desativando testes](#dica-desativando-testes)
     - [Dica: watch mode](#dica-watch-mode)
 - [Requisitos do projeto](#requisitos-do-projeto)
-
-
-<details>
-  <summary>Componente `<SearchBar />`</summary>
-
     - [1 - Crie um componente chamado `<SearchBar />`](#1---crie-um-componente-chamado-searchbar-)
     - [2 - Renderize um formulário dentro de `<SearchBar />`](#2---renderize-um-formulário-dentro-de-searchbar-)
     - [3 - Renderize um input do tipo texto dentro do formulário em `<SearchBar />`](#3---renderize-um-input-do-tipo-texto-dentro-do-formulário-em-searchbar-)
     - [4 - Renderize um input do tipo checkbox dentro do formulário em `<SearchBar />`](#4---renderize-um-input-do-tipo-checkbox-dentro-do-formulário-em-searchbar-)
     - [5 - Renderize um select dentro do formulário em `<SearchBar />`](#5---renderize-um-select-dentro-do-formulário-em-searchbar-)
-</details>
-
-<details>
-  <summary>Componente `<AddMovie />`</summary>
-
     - [6 - Crie um componente chamado `<AddMovie />`](#6---crie-um-componente-chamado-addmovie-)
     - [7 - Renderize um formulário dentro de `<AddMovie />`](#7---renderize-um-formulário-dentro-de-addmovie-)
     - [8 - Renderize um input do tipo texto dentro do formulário em `<AddMovie />` para obter o título do novo filme](#8---renderize-um-input-do-tipo-texto-dentro-do-formulário-em-addmovie--para-obter-o-título-do-novo-filme)
@@ -54,17 +44,11 @@ F
     - [12 - Renderize um `input` do tipo `number` dentro do formulário em `<AddMovie />` para obter a avaliação do novo filme](#12---renderize-um-input-do-tipo-number-dentro-do-formulário-em-addmovie--para-obter-a-avaliação-do-novo-filme)
     - [13 - Renderize um `select` do formulário em `<AddMovie />` para selecionar o gênero do novo filme](#13---renderize-um-select-do-formulário-em-addmovie--para-selecionar-o-gênero-do-novo-filme)
     - [14 - Renderize um botão do formulário em `<AddMovie />` para fazer uso dos dados do novo filme, contidos no estado de `<AddMovie />`](#14---renderize-um-botão-do-formulário-em-addmovie--para-fazer-uso-dos-dados-do-novo-filme-contidos-no-estado-de-addmovie)
-</details>
-
-<details>
-  <summary>Componente `<MovieLibrary />`</summary>
-
     - [15 - Crie um componente chamado `<MovieLibrary />`](#15---crie-um-componente-chamado-movielibrary-)
     - [16 - Configure o estado inicial do componente `<MovieLibrary />`](#16---configure-o-estado-inicial-do-componente-movielibray-)
     - [17 - Renderize `<SearchBar />` dentro de `<MovieLibrary />`](#17---renderize-searchbar-dentro-de-movielibrary-)
     - [18 - Renderize `<MovieList />` dentro de `<MovieLibrary />`](#18---renderize-movielist--dentro-de-movielibrary-)
     - [19 - Renderize `<AddMovie />` dentro de `<MovieLibrary />`](#19---renderize-addmovie-dentro-de-movielibrary-)
-</details>
     - [20 - Adicione proptypes a todos os componentes](#20---adicione-proptypes-a-todos-os-componentes)
 - [Avisos Finais](#avisos-finais)
 
@@ -369,9 +353,6 @@ Ao executar os testes localmente, [Jest](https://jestjs.io/), a ferramenta que e
 
 ⚠️ Lembre-se que o seu projeto só será avaliado se estiver passando por **todos os _checks_** do **Linter**⚠️
 
-<details>
-  <summary>Componente `<SearchBar />`</summary>
-
 ### 1 - Crie um componente chamado `<SearchBar />`
 
 Esse componente renderizará uma barra com filtros acima da listagem de cartões. Quais cartões serão mostrados no componente `<MovieList />` dependerá dos filtros escolhidos. `<SearchBar />` deve receber como props:
@@ -461,11 +442,6 @@ Dentro desse formulário haverá campos usados na filtragem de cartões.
   - Será validado se a prop `selectedGenre` é passada como valor do select
   - Será validado se a prop `onSelectedGenreChange` é passada para o atributo `onChange` do select
   - Será validado se são renderizadas 4 options dentro do select com os textos e valores, respectivamente: Todos e \'\', Ação e action, Comédia e comedy, Suspense e thriller
-</details>
-
-<details>
-  <summary>Componente `<AddMovie />`</summary>
-
 
 ### 6 - Crie um componente chamado `<AddMovie />`
 
@@ -648,11 +624,6 @@ Dentro desse formulário haverá campos usados para preencher informações do n
   - Será validado se o texto do botão é "Adicionar filme"
   - Será validado se o evento onClick é chamado ao se clicar no botão.
   - Será validado se o estado dos inputs volta ao inicial depois que o botão de adicionar é clicado.
-</details>
-
-<details>
-  <summary>Componente `<MovieLibrary />`</summary>
-
 
 ### 15 - Crie um componente chamado `<MovieLibrary />`
 
@@ -747,8 +718,6 @@ O estado inicial do componente `<MovieLibrary />` deve ser:
 **O que será verificado:**
   - Será validado se o componente `<AddMovie />` é renderizado com sucesso
   - Será validado se é possível adicionar um novo filme a lista de filmes
-
-</details>
 
 ### 20 - Adicione proptypes a todos os componentes
 
