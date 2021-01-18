@@ -38,19 +38,21 @@
       "description": "14 - Renderize um botão do formulário em `<AddMovie />` para fazer uso dos dados do novo filme, contidos no estado de `<AddMovie />`",
       "bonus": false
     },
-    { "description": "15 - Crie um componente chamado `MovieLibrary`", "bonus": false },
+    { "description": "15 - Crie um componente chamado `<MovieLibrary />`", "bonus": false },
     {
-      "description": "16 - Configure o estado inicial do componente `MovieLibray`",
+      "description": "16 - Configure o estado inicial do componente `<MovieLibrary />`",
       "bonus": false
     },
     {
-      "description": "17 - Renderize `<SearchBar />` dentro de `MovieLibrary`",
+      "description": "17 - Renderize `<SearchBar />` dentro de `<MovieLibrary />`",
       "bonus": false
     },
-    { "description": "18 - Renderize `MovieList` dentro de `MovieLibrary`", "bonus": false },
+    { "description": "18 - Renderize `<MovieList />` dentro de `<MovieLibrary />`", "bonus": false },
     {
-      "description": "19 - Renderize `<AddMovie />` dentro de `MovieLibrary`",
+      "description": "19 - Renderize `<AddMovie />` dentro de `<MovieLibrary />`",
       "bonus": false
     }
+  ]
+}
   ]
 }
