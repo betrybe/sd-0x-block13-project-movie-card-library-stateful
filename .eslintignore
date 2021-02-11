@@ -1,5 +1,4 @@
 src/data.js
 src/serviceWorker.js
-src/App.test.js
 src/setupTests.js
-src/components/*.test.js
+src/tests/*.test.js
