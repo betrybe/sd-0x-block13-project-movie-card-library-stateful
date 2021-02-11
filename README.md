@@ -104,7 +104,7 @@ controlada por estados.
 ## Antes de começar a desenvolver
 
 1. Clone o repositório
-  * `git clone git@github.com:tryber/sd-0x-project-movie-cards-library-stateful.git`.
+  * `git clone https://github.com/tryber/sd-0x-project-movie-cards-library-stateful.git`.
   * Entre na pasta do repositório que você acabou de clonar:
     * `cd sd-0x-project-movie-cards-library-stateful`
 
