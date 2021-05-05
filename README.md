@@ -664,7 +664,7 @@ O estado inicial do componente `<MovieLibrary />` deve ser:
 
 **O que será verificado:**
   - Será validado se um componente `<SearchBar />` é renderizado
-  - Será validado se o estado da `<SearchBar />` muda quando quem usa digita algo
+  - Será validado se o estado da `<MovieLibrary />` muda quando quem usa digita algo no `<SearchBar />`
   - Será validado que é possivel selecionar a opção de filtrar por favoritos
   - Será validado que é possivel escolher uma categoria uma categoria de filme para filtrar
 
