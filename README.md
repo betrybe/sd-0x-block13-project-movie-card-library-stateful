@@ -647,6 +647,7 @@ O estado inicial do componente `<MovieLibrary />` deve ser:
   - Será validado se o `selectedGenre` é inicializado com uma string vazia
   - Será validado se o todos os `movies` são renderezidados.
 
+> OBS: Esse teste só irá ser aprovado após a conclusão dos requisitos 17 e 18.
 
 ### 17 - Renderize `<SearchBar />` dentro de `<MovieLibrary />`
 
