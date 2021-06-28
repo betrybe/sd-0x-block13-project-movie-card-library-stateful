@@ -214,9 +214,9 @@ Esse projeto contém os seguintes `React Components`:
    - Rating
    - AddMovie
 
-`<Header />`, `<MovieList />`, `<MovieCard />` e `<Rating />` **já estão implementados com os testes passando**. `<MovieLibrary />`, `<SearchBar />` e `<AddMovie />` já estão criados, mas precisam ser implementados de forma a passarem nos requisitos listados abaixo.
+`<Header />`, `<MovieList />`, `<MovieCard />` e `<Rating />` **já estão implementados com os testes passando**. `<MovieLibrary />`, `<SearchBar />` e `<AddMovie />` já estão criados, mas precisam ser implementados de forma a passarem nos requisitos listados abaixo. 
 
-Todos os componentes devem ser criados dentro da pasta `src/components`. **É obrigatório que seus componentes tenham exatamente os nomes listados acima**.
+⚠️ **Atenção:** Ao chamar um componente dentro de outro, verifique se ele já está com uma implementação inicial, caso contrário tanto sua aplicação quanto seu teste irão quebrar! ⚠️
 
 ---
 
