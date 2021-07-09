@@ -296,7 +296,7 @@ Quando seu projeto estiver terminado, todos os testes deverão estar passando:
 
 ---
 
-### Dica: desativando testes
+### Dica: desativando ou rodando apenas um teste
 
 Especialmente no início, quando a maioria dos testes está falhando, a saída após executar os testes é bastante poluída. Você pode desabilitar temporariamente um teste utilizando a função `skip` junto à função `it`. Como o nome indica, esta função "pula" um teste:
 
@@ -319,6 +319,16 @@ Você também pode rodar apenas um arquivo de teste, por exemplo:
 ```bash
 npm test SearchBar.test.js
 ```
+
+Uma outra forma para driblar esse problema é a utilização da função `.only` após o describe. Com isso, será possível que apenas um requisito rode localmente e seja avaliado.
+
+![image](describe-only.png)
+![image](only-all-green.png)
+
+Caso queira avaliar apenas um tópico do requisito, você também pode usar o `.only` após o it.
+
+![image](it-only.png)
+![image](only-one-green.png)
 
 ⚠️ Lembre-se de não entregar o projeto com nenhum teste ignorado. **Testes ignorados serão tratados como testes falhando**. ⚠️
 
